@@ -1,0 +1,61 @@
+.social-icons{
+    display: flex;
+    justify-content: center;
+    padding-left: 0;
+    margin-bottom: 30px;
+}
+.social-icons-link{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 44px;
+    height: 44px;
+    background-color: $whait-cl;
+    border-radius: 50%;
+}
+.social-icons-item{
+    display: inline-block;
+    text-decoration: none;
+    &:not(:last-child){
+      margin-right: 10px;
+    }
+}
+.social-icons-svg{
+    width: 20px;
+    height: 20px;
+    fill:rgba(175, 177, 184, 1);
+}
+.social-icons-svg-footer{
+    width: 20px;
+    height: 20px;
+    fill:$whait-cl;
+}
+.social-icons-link-footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.1);
+}
+.social-icons-link{
+    &:hover{
+      background-color: $accent-cl;
+    }
+    &:hover .social-icons-svg,
+    &:focus .social-icons-svg{
+      fill: $whait-cl;
+      transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    }
+}
+.social-icons-link-footer{
+    &:hover .social-icons-svg,
+    &:focus .social-icons-svg{
+      fill: $whait-cl;
+      transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    }
+    &:hover{
+      background-color: $accent-cl;
+    }
+}

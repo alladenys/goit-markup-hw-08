@@ -1,0 +1,74 @@
+.backdrop{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.2);
+    z-index: 100;
+    opacity: 1;
+    transition: opacity 0.5s ease-in;
+    &.is-hidden{
+        opacity: 0;
+        visibility: hidden;
+        pointer-events: none;
+    }
+}
+.is-hidden.modal{
+    transform: translate(-50%,-50%) scale(0.5);
+}
+.modal{
+    position: absolute;
+    top: 25%;
+    left: 50%;
+    transform: translate(-50%,-50%) scale(1);
+    width: 100%;
+    max-width: 528px;
+    height: 581px;
+    background-color: rgba(255, 255, 255, 1);
+    padding: 80,40;
+    transition: transform 0.5s;
+    margin-top: 221px;
+    padding-top: 40px;padding-right: 39px;
+    padding-bottom: 40px;padding-left: 41px;
+}
+.modal-title{
+    margin: 0;
+    padding: 0;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 1.15;
+    text-align: center;
+    letter-spacing: 0.03em;
+}
+.button-clouse{
+    content: "";
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    width: 30px;
+    height: 30px;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 100%;
+    background: inherit;
+    cursor: pointer;
+}
+.button-clouse:focus{
+    fill: $accent-cl;
+    cursor: pointer;
+}
+.icon-x{
+    cursor: pointer;
+    display: flex;
+    margin-top: 4px;
+    margin-left: 4px;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    fill: $black-cl;
+    &:focus,
+    &:hover{
+      fill: $accent-cl;
+      cursor: pointer;
+    }
+}

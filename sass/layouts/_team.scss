@@ -1,0 +1,106 @@
+
+.section-title {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.167;
+    letter-spacing: 0.03em;
+    color: $black-cl;
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 50px;
+}
+.list-img{
+    margin-top: 0;
+    margin-bottom: 94px;
+    padding-left: 0;
+}
+.list-item-position{
+    margin-bottom: 0px;
+    width: 370px;
+    height: 294px;
+}
+.list-item-position:not(:last-child){
+    margin-right: 30px;
+}
+.main-text {
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    color: $main-text-cl;
+    width: 270px;
+    margin-left: 0;
+    padding-left: 0;   
+}
+.text-box {
+    width: 270px;
+    height: 75px;
+    margin-block-start: 10px;
+    margin-bottom: 94px;
+}
+.job-description {
+    height: 19px;
+    font-size: 16px;
+    line-height: 1.187;
+    letter-spacing: 0.03em;
+    color: $main-text-cl;
+    margin-top: 10px;
+    margin-bottom: 16px;
+    text-align: center;
+    width: 270px;
+}
+.introduction {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.187;
+    letter-spacing: 0.03em;
+    color: $black-cl;
+}
+.team-box{
+    height: 648px;
+    background-color: #F5F4FA;
+    box-sizing: inherit;
+}
+.list-position {
+    margin-top: 94px;
+    margin-left: 0;
+    padding-left: 0;
+    margin-bottom: 0;
+}
+.list-position-item-title{
+    margin-top: 30;
+    margin-bottom: 0;
+    text-transform: uppercase;
+}
+.team-titel{
+    padding-top: 94px;
+    margin-bottom: 0;
+    margin-bottom: 50px;
+}
+.list-position-team{
+    margin-top: 0;
+    margin-left: 0;
+    padding-left: 0;
+    margin-bottom: 0;
+    width: 270px;
+    height: 428px;
+}
+.list-contacts-img{
+    background-color: $whait-cl;
+    margin-top: 0;
+    margin-right: 0;
+    width: 270px;
+    &:not(:last-child){
+        margin-right: 30px;
+    }
+}
+.list-position-item:not(:last-child){
+   margin-right: 30px;
+}
+.contacts-information{
+    font-weight: 500;
+    margin-top: 30px;
+    margin-bottom: 0px;
+    text-align: center;
+    height: 19px;
+    width: 270px;
+}
