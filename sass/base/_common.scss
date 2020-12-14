@@ -3,9 +3,10 @@ html {
 }
 
 *,
-*::before,
-*::after {
+::before,
+::after {
     box-sizing: inherit;
+    outline: 2pc solid red;
 }
 body {
     font-family: "Roboto", sans-serif;
@@ -22,6 +23,17 @@ body {
     padding-right:15px ;
     margin-left: auto;
     margin-right: auto;
+
+    @include for-size(mobile) {
+        width: 480px;
+    }
+    @include for-size(tablet) {
+        width: 768px;
+    }
+    @include for-size(desktop) {
+        width: 1200px;
+    }
+
 }
 .flex {
     display: flex;
