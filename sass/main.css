@@ -8,6 +8,7 @@ html {
 *::after {
   -webkit-box-sizing: inherit;
           box-sizing: inherit;
+  outline: 2pc solid red;
 }
 
 body {
