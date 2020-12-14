@@ -61,15 +61,37 @@
     box-sizing: inherit;
 }
 .list-position {
-    margin-top: 94px;
+    margin-top: 60px;
     margin-left: 0;
     padding-left: 0;
     margin-bottom: 0;
+
+    @include font-size(mobile) {
+        
+
+    }
+    @include font-size(tablet) {
+    
+
+    }
+
+    @include font-size(desctop) {
+        margin-top: 94px;
+    }
 }
+
 .list-position-item-title{
     margin-top: 30;
     margin-bottom: 0;
     text-transform: uppercase;
+
+    @include font-size(mobile) {
+        display: block;
+
+    }
+    @include font-size(tablet) {
+        display: flex;
+    }
 }
 .team-titel{
     padding-top: 94px;
