@@ -90,4 +90,8 @@
     opacity: 1;
     top: 0;
 }
-
+.hidden-section{
+    @media screen and(max-width: 1200px){
+       display: none;
+    }
+}

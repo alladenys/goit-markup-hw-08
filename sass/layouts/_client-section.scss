@@ -3,7 +3,7 @@
     font-size: 18px;
     line-height: 2.0;
     letter-spacing: 0.06em;
-    color: var(--black-cl--);
+    color: $main-text-cl;
     padding-left: 24px;
     padding-right: 24px;
     margin-top: 20px;
@@ -15,13 +15,13 @@
     font-size: 16px;
     line-height: 1.87;
     letter-spacing: 0.03em;
-    color:$main-text-cl;
+    color: $main-text-cl;
     padding-left: 24px;
     padding-right: 24px;
     margin-top: 4px;
     margin-bottom: 20px;
     width: 370px;
-    margin-right: 0;
+    margin-right: 0px;
 }
 
 .btn-portfolio:hover,
@@ -52,23 +52,55 @@
     margin-bottom: 9px;
     display: flex;
 }
-.client-section{
-   margin: 0;
-   padding: 0;
-}
 .client-title{
     margin-top: 94px;
-    margin-bottom: 50;
-}
-.client-logo-list{
-    display: flex;
-    margin-top: 0;
-    padding: 0;
-    margin-bottom: 94px;
+    margin-bottom: 50px;
 }
 .client-logo{
-    width:170px;
-    height:90px;
+    display: inline;
+    margin-right: 30px;
+}
+
+.client-logo-list{
+    margin-top: 0;
+    margin-bottom: 30px;
+    margin-right: 0;
+    margin-left: 0;
+    padding: 0;
+    @media screen and (max-width: 480px) {
+        .client-logo{
+        width: calc((100% - 34px)/2);
+        max-width: 480px;
+        display: inline-block;
+        }
+        .client-logo:nth-child(2n){
+            margin-right: 0;
+        }
+    }
+    @media screen and (min-width: 768px) and (max-width: 1200px) {
+        .client-logo{
+        width: calc((100% - 78px)/3);
+        display: inline-block;
+        max-width: 768px;
+        }
+        .client-logo:nth-child(3n){
+            margin-right: 0;
+        }
+    }
+    @media screen and (min-width: 1200px) {
+        .client-logo {
+        width: calc((100% - 168px)/6);
+        display: inline-block;
+        max-width: 1200px;
+        }
+        .client-logo:last-child{
+            margin-right: 0;
+        }
+    }
+}
+
+.client-logo{
+    height: 90px;
     border: 1px solid #AFB1B8;
     border-radius: 4px;
     box-sizing: border-box;
@@ -81,14 +113,15 @@
     &:hover svg.client-logo-svg{
       fill: $accent-cl;
     }
-    &:not(:last-child){
-        margin-right: 30px;
-    }
 }
+
 .client-logo-link{
+    width: 100%;
     display: flex;
     box-sizing: border-box;
     height: 90px;
+    justify-content: center;
+    align-items: center;
 }
 .client-logo-svg{
     text-align: center;
@@ -118,10 +151,6 @@
     height: 47px;
 }
 .logo6{
-    width: 89px;
     height: 46px;
-}
-.client-logo-link{
-    justify-content: center;
-    align-items: center;
+    width: 89px;
 }
