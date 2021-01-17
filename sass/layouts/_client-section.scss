@@ -77,6 +77,16 @@
             margin-right: 0;
         }
     }
+    @media screen and (min-width: 480px) and (max-width: 767px) {
+        .client-logo{
+        width: calc((100% - 34px)/2);
+        max-width: 480px;
+        display: inline-block;
+        }
+        .client-logo:nth-child(2n){
+            margin-right: 0;
+        }
+    }
     @media screen and (min-width: 768px) and (max-width: 1200px) {
         .client-logo{
         width: calc((100% - 78px)/3);

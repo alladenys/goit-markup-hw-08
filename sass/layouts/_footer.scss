@@ -25,18 +25,91 @@
     line-height: 1.14;
     letter-spacing: 3%;
 }
-.inline-information{
-    display: inline-flex;
+@media screen and (max-width: 480px){
+    .inline-information{
+        display: inline;
+        min-width: 480px;
+    }
+    .inline-information-item{
+        justify-content: center;
+        list-style: none;
+        margin: 0;
+        padding: 0;
+    }
+    .logo-footer{
+        max-width: 154px;
+        margin-right: auto;
+        margin-left: auto;
+    }
+    ul.list-item{
+        justify-content: center;
+        display: block;
+        max-width: 232px;
+        margin-right: auto;
+        margin-left: auto;
+    }
+    .join-social{
+        margin-top: 60px;
+        justify-content: center;
+        display: block;
+        margin-right: auto;
+        margin-left: auto;
+        padding-left: 0;
+        padding-right: 0;
+    }
+    .social-icons{
+        width: 218px;
+        display: block;
+        margin-top: 10px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    h3.join{
+        text-align: center;
+    }
+    h3.subscribe{
+        text-align: center;
+    }
+// }
+// @media screen and (min-width: 480px) and (max-width: 768px){
+//     .inline-information{
+//         display: inline;
+//         min-width: 480px;
+//     }
+//     .inline-information-item{
+//         justify-self: center;
+//         list-style: none;
+//         margin: 0;
+//         padding: 0;
+//     }
+// }
+// @media screen and (min-width: 768px) and (max-width: 1200px){
+//     .inline-information{
+//         display: inline;
+//         min-width: 480px;
+//     }
+//     .inline-information-item{
+//         justify-self: center;
+//         list-style: none;
+//         margin: 0;
+//         padding: 0;
+//     }
 }
-.inline-information-item{
-    list-style: none;
-    margin: 0;
-    padding: 0;
+@media screen and (min-width: 1200px){
+    .inline-information{
+        display: inline-flex;
+    }
+    .inline-information-item{
+        list-style: none;
+        margin: 0;
+        padding: 0;
+    }
+    .join-social{
+        margin-top: 72px;
+        margin-left: 70px;
+    }
 }
-.join-social{
-    margin-top: 72px;
-    margin-left: 70px;
-}
+
 figure{
     position: relative;
     height: 100%;
@@ -91,9 +164,23 @@ figure{
     margin-top: 72px;
     margin-left: 215px;
     margin-left: 93px;
+    @media screen and(max-width: 768px){
+        width: 100%;
+        max-width: 480px;
+        padding-left: 0;
+        padding-right: 0;
+        margin-left: 0;
+        margin-right: 0;
+    }
 }
 .subscribe-form{
-    display: flex;
+    @media screen and(max-width: 768px){
+        width: 100%;
+        margin-top: 20px;
+    }
+    @media screen and(min-width: 1200px){
+        display: flex;
+    }
 }
 .form-feald{
     border: 1px solid rgba(255, 255, 255, 0.3);
@@ -113,6 +200,14 @@ figure{
     padding-left: 16px;
     padding-bottom: 15px;
     padding-right: 16px;
+    @media screen and(max-width: 768px){
+        width: 100%;
+        max-width: 480px;
+        padding-left: 0;
+        padding-right: 0;
+        margin-left: 0;
+        margin-right: 0;
+    }
 }
 .subscribe-btn{
     display: flex;
@@ -141,6 +236,15 @@ figure{
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     fill: $whait-cl;
     cursor: pointer;
+    @media screen and(max-width: 768px){
+        max-width: 480px;
+        padding-left: 29px;
+        padding-right: 0;
+        margin-top: 20px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
 }
 .bsubscribe-btn:disabled{
     background: grey;
@@ -149,4 +253,8 @@ figure{
 }
 .svg-plain{
     margin-left: 10px;
+    @media screen and(max-width: 768px){
+        margin-left: 10px;
+        margin-right: 28px;
+    }
 }

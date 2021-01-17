@@ -731,7 +731,7 @@ p.main-text {
 
 .backgraund-down {
   background-color: #2F303A;
-  height: 252px;
+  height: auto;
 }
 
 .btn-portfolio {
@@ -1157,6 +1157,17 @@ p.main-text {
   }
 }
 
+@media screen and (min-width: 480px) and (max-width: 767px) {
+  .client-logo-list .client-logo {
+    width: calc((100% - 34px)/2);
+    max-width: 480px;
+    display: inline-block;
+  }
+  .client-logo-list .client-logo:nth-child(2n) {
+    margin-right: 0;
+  }
+}
+
 @media screen and (min-width: 768px) and (max-width: 1200px) {
   .client-logo-list .client-logo {
     width: calc((100% - 78px)/3);
@@ -1275,19 +1286,66 @@ p.main-text {
   letter-spacing: 3%;
 }
 
-.inline-information {
-  display: inline-flex;
+@media screen and (max-width: 480px) {
+  .inline-information {
+    display: inline;
+    min-width: 480px;
+  }
+  .inline-information-item {
+    justify-content: center;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  .logo-footer {
+    max-width: 154px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+  ul.list-item {
+    justify-content: center;
+    display: block;
+    max-width: 232px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+  .join-social {
+    margin-top: 60px;
+    justify-content: center;
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    padding-left: 0;
+    padding-right: 0;
+  }
+  .social-icons {
+    width: 218px;
+    display: block;
+    margin-top: 10px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  h3.join {
+    text-align: center;
+  }
+  h3.subscribe {
+    text-align: center;
+  }
 }
 
-.inline-information-item {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-}
-
-.join-social {
-  margin-top: 72px;
-  margin-left: 70px;
+@media screen and (min-width: 1200px) {
+  .inline-information {
+    display: inline-flex;
+  }
+  .inline-information-item {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  .join-social {
+    margin-top: 72px;
+    margin-left: 70px;
+  }
 }
 
 figure {
@@ -1350,8 +1408,28 @@ figure p {
   margin-left: 93px;
 }
 
-.subscribe-form {
-  display: flex;
+@media screen and (max-width: 768px) {
+  .subscribe-newsletter {
+    width: 100%;
+    max-width: 480px;
+    padding-left: 0;
+    padding-right: 0;
+    margin-left: 0;
+    margin-right: 0;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .subscribe-form {
+    width: 100%;
+    margin-top: 20px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .subscribe-form {
+    display: flex;
+  }
 }
 
 .form-feald {
@@ -1372,6 +1450,17 @@ figure p {
   padding-left: 16px;
   padding-bottom: 15px;
   padding-right: 16px;
+}
+
+@media screen and (max-width: 768px) {
+  .form-feald {
+    width: 100%;
+    max-width: 480px;
+    padding-left: 0;
+    padding-right: 0;
+    margin-left: 0;
+    margin-right: 0;
+  }
 }
 
 .subscribe-btn {
@@ -1404,6 +1493,17 @@ figure p {
   cursor: pointer;
 }
 
+@media screen and (max-width: 768px) {
+  .subscribe-btn {
+    max-width: 480px;
+    padding-left: 29px;
+    padding-right: 0;
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
 .bsubscribe-btn:disabled {
   background: grey;
   color: #ccc;
@@ -1412,5 +1512,12 @@ figure p {
 
 .svg-plain {
   margin-left: 10px;
+}
+
+@media screen and (max-width: 768px) {
+  .svg-plain {
+    margin-left: 10px;
+    margin-right: 28px;
+  }
 }
 /*# sourceMappingURL=main.css.map */
