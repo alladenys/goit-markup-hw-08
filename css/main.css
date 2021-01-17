@@ -6,7 +6,7 @@ html {
 *::before,
 *::after {
   box-sizing: inherit;
-  outline: 2pc solid red;
+  outline: 1pc solid red;
 }
 
 body {
@@ -20,17 +20,36 @@ body {
   transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
 .container {
-  width: 1200px;
   padding-left: 15px;
   padding-right: 15px;
   margin-left: auto;
   margin-right: auto;
+  justify-content: center;
 }
 
-.flex {
-  display: flex;
-  margin-bottom: 25px;
+@media screen and (min-width: 480px) and (max-width: 768px) {
+  .container {
+    min-width: 480px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1200px) {
+  .container {
+    min-width: 768px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .container {
+    max-width: 1200px;
+  }
 }
 
 .logo {
@@ -404,10 +423,9 @@ label.fake {
 
 .list {
   list-style: none;
-  display: inline-flex;
   margin-top: 24px;
   box-sizing: border-box;
-  margin-left: 0;
+  margin-left: 0px;
 }
 
 .link {
@@ -547,6 +565,138 @@ link:hover .icon-header-item2 {
   fill: #2196F3;
 }
 
+.list-position {
+  margin-top: 60px;
+  padding-left: 0;
+  margin-bottom: 0;
+}
+
+@media screen and (min-width: 1200px) {
+  .list-position {
+    display: inline-flex;
+  }
+}
+
+.list-position-item {
+  margin-left: 0;
+  margin-right: 0;
+  margin-top: 0;
+}
+
+@media screen and (min-width: 480px) and (max-width: 768px) {
+  .list-position-item {
+    max-width: 450px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1200px) {
+  .list-position-item {
+    display: inline-block;
+    margin-right: 30px;
+    width: calc((100% - 34px)/2);
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .list-position-item {
+    max-width: 270px;
+    margin-right: 30px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1200px) {
+  .list-position-item {
+    margin-right: 30px;
+    margin-left: 0;
+    margin-top: 0;
+    margin-bottom: 30px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .list-position-item:last-child {
+    margin-right: 0px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1200px) {
+  .list-position-item:nth-child(even) {
+    margin-right: 0;
+  }
+}
+
+.list-position li {
+  justify-content: center;
+}
+
+@media screen and (max-width: 768px) {
+  .list-position li {
+    width: 100%;
+    margin-bottom: 30px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1200px) {
+  .list-position li {
+    margin-bottom: 30px;
+    margin-top: 0;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .list-position li {
+    padding: 0;
+  }
+}
+
+p.main-text {
+  height: 50px;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1200px) {
+  p.main-text {
+    height: 75px;
+  }
+  p.main-text p.main-text:nth-child(2n+1) {
+    height: 50px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  p.main-text {
+    height: 75px;
+  }
+}
+
+.item-backgraund {
+  background-color: #F5F4FA;
+  height: 120px;
+  padding-top: 25px;
+  padding-bottom: 25px;
+  text-align: center;
+  width: 100%;
+}
+
+.features {
+  width: 65px;
+  height: 70px;
+  background-color: #F5F4FA;
+  display: inline-block;
+}
+
+.features:hover {
+  fill: #2196F3;
+}
+
+.list-position-item-title {
+  width: 100%;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+  text-align: center;
+}
+
 .main {
   background-color: #FFFFFF;
   border: 1px solid #ECECEC;
@@ -563,24 +713,9 @@ link:hover .icon-header-item2 {
   margin-left: 0;
 }
 
-.item-backgraund {
-  background-color: #F5F4FA;
-  width: 270px;
-  height: 120px;
-  padding-top: 25px;
-  padding-bottom: 25px;
-  text-align: center;
-}
-
-.features {
-  width: 65px;
-  height: 70px;
-  background-color: #F5F4FA;
-  display: inline-block;
-}
-
-.features:hover {
-  fill: #2196F3;
+.flex {
+  display: flex;
+  margin-bottom: 25px;
 }
 
 .portfolio-list {
@@ -702,9 +837,15 @@ link:hover .icon-header-item2 {
   top: 0;
 }
 
+@media screen and (max-width: 1200px) {
+  .hidden-section {
+    display: none;
+  }
+}
+
 .page-title {
   font-weight: 900;
-  font-size: 44px;
+  font-size: 26px;
   line-height: 1.36;
   letter-spacing: 0.06em;
   text-align: center;
@@ -716,6 +857,17 @@ link:hover .icon-header-item2 {
   margin-left: auto;
   margin-right: auto;
   text-transform: uppercase;
+  max-width: 360px;
+  height: 84px;
+}
+
+@media screen and (min-width: 1200px) {
+  .page-title {
+    font-size: 44px;
+    line-height: 1.61;
+    max-width: 696px;
+    height: 120px;
+  }
 }
 
 .section-title {
@@ -727,12 +879,6 @@ link:hover .icon-header-item2 {
   text-align: center;
   margin-top: 0;
   margin-bottom: 50px;
-}
-
-.list-img {
-  margin-top: 0;
-  margin-bottom: 94px;
-  padding-left: 0;
 }
 
 .list-item-position {
@@ -750,16 +896,14 @@ link:hover .icon-header-item2 {
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: #757575;
-  width: 270px;
-  margin-left: 0;
-  padding-left: 0;
+  margin-left: 0px;
+  padding-left: 0px;
 }
 
 .text-box {
-  width: 270px;
-  height: 75px;
   margin-block-start: 10px;
   margin-bottom: 94px;
+  height: 75px;
 }
 
 .section-title {
@@ -774,6 +918,7 @@ link:hover .icon-header-item2 {
 }
 
 .list-img {
+  display: inline-flex;
   margin-top: 0;
   margin-bottom: 94px;
   padding-left: 0;
@@ -787,23 +932,12 @@ link:hover .icon-header-item2 {
 
 .list-item-position:not(:last-child) {
   margin-right: 30px;
-}
-
-.main-text {
-  font-size: 14px;
-  line-height: 1.71;
-  letter-spacing: 0.03em;
-  color: #757575;
-  width: 270px;
-  margin-left: 0;
-  padding-left: 0;
+  margin-left: 0px;
 }
 
 .text-box {
-  width: 270px;
+  width: 100%;
   height: 75px;
-  margin-block-start: 10px;
-  margin-bottom: 94px;
 }
 
 .job-description {
@@ -832,23 +966,9 @@ link:hover .icon-header-item2 {
   box-sizing: inherit;
 }
 
-.list-position {
-  margin-top: 94px;
-  margin-left: 0;
-  padding-left: 0;
-  margin-bottom: 0;
-}
-
-.list-position-item-title {
-  margin-top: 30;
-  margin-bottom: 0;
-  text-transform: uppercase;
-}
-
 .team-titel {
   padding-top: 94px;
-  margin-bottom: 0;
-  margin-bottom: 50px;
+  margin-bottom: 30px;
 }
 
 .list-position-team {
@@ -871,12 +991,8 @@ link:hover .icon-header-item2 {
   margin-right: 30px;
 }
 
-.list-position-item:not(:last-child) {
-  margin-right: 30px;
-}
-
 .contacts-information {
-  font-weight: 500;
+  font-weight: 500px;
   margin-top: 30px;
   margin-bottom: 0px;
   text-align: center;
@@ -957,7 +1073,7 @@ link:hover .icon-header-item2 {
   font-size: 18px;
   line-height: 2.0;
   letter-spacing: 0.06em;
-  color: var(--black-cl--);
+  color: #757575;
   padding-left: 24px;
   padding-right: 24px;
   margin-top: 20px;
@@ -976,7 +1092,7 @@ link:hover .icon-header-item2 {
   margin-top: 4px;
   margin-bottom: 20px;
   width: 370px;
-  margin-right: 0;
+  margin-right: 0px;
 }
 
 .btn-portfolio:hover,
@@ -1012,25 +1128,58 @@ link:hover .icon-header-item2 {
   display: flex;
 }
 
-.client-section {
-  margin: 0;
-  padding: 0;
-}
-
 .client-title {
   margin-top: 94px;
-  margin-bottom: 50;
-}
-
-.client-logo-list {
-  display: flex;
-  margin-top: 0;
-  padding: 0;
-  margin-bottom: 94px;
+  margin-bottom: 50px;
 }
 
 .client-logo {
-  width: 170px;
+  display: inline;
+  margin-right: 30px;
+}
+
+.client-logo-list {
+  margin-top: 0;
+  margin-bottom: 30px;
+  margin-right: 0;
+  margin-left: 0;
+  padding: 0;
+}
+
+@media screen and (max-width: 480px) {
+  .client-logo-list .client-logo {
+    width: calc((100% - 34px)/2);
+    max-width: 480px;
+    display: inline-block;
+  }
+  .client-logo-list .client-logo:nth-child(2n) {
+    margin-right: 0;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1200px) {
+  .client-logo-list .client-logo {
+    width: calc((100% - 78px)/3);
+    display: inline-block;
+    max-width: 768px;
+  }
+  .client-logo-list .client-logo:nth-child(3n) {
+    margin-right: 0;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .client-logo-list .client-logo {
+    width: calc((100% - 168px)/6);
+    display: inline-block;
+    max-width: 1200px;
+  }
+  .client-logo-list .client-logo:last-child {
+    margin-right: 0;
+  }
+}
+
+.client-logo {
   height: 90px;
   border: 1px solid #AFB1B8;
   border-radius: 4px;
@@ -1048,14 +1197,13 @@ link:hover .icon-header-item2 {
   fill: #2196F3;
 }
 
-.client-logo:not(:last-child) {
-  margin-right: 30px;
-}
-
 .client-logo-link {
+  width: 100%;
   display: flex;
   box-sizing: border-box;
   height: 90px;
+  justify-content: center;
+  align-items: center;
 }
 
 .client-logo-svg {
@@ -1092,13 +1240,8 @@ link:hover .icon-header-item2 {
 }
 
 .logo6 {
-  width: 89px;
   height: 46px;
-}
-
-.client-logo-link {
-  justify-content: center;
-  align-items: center;
+  width: 89px;
 }
 
 .adress {

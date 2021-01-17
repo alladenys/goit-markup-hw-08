@@ -1,0 +1,96 @@
+.list-position {
+    margin-top: 60px;
+    padding-left: 0;
+    margin-bottom: 0;
+    @media screen and (min-width: 1200px){
+    display: inline-flex;
+    }
+}
+.list-position-item{
+    margin-left: 0;
+    margin-right: 0;
+    margin-top: 0;
+    @media screen and (min-width: 480px) and (max-width: 768px){
+        max-width: 450px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    @media screen and (min-width: 768px) and (max-width: 1200px){
+        display: inline-block;
+        margin-right: 30px;
+        width: calc((100% - 34px)/2);
+    }
+    @media screen and (min-width: 1200px){
+        max-width: 270px;
+        margin-right: 30px;
+    }
+}
+@media screen and (min-width: 768px) and (max-width: 1200px){
+    .list-position-item{
+         margin-right: 30px;
+         margin-left: 0;
+         margin-top: 0;
+         margin-bottom: 30px;
+    }
+}
+@media screen and (min-width: 1200px){
+    .list-position-item:last-child{
+        margin-right: 0px;
+    }
+}
+.list-position-item:nth-child(even){
+    @media screen and (min-width: 768px) and (max-width: 1200px){
+        margin-right: 0;
+    }
+}
+
+.list-position li{
+    justify-content:center;
+    @media screen and (max-width: 768px){
+        width: 100%;
+        margin-bottom: 30px;
+    }
+    @media screen and (min-width: 768px) and (max-width: 1200px){
+        margin-bottom: 30px;
+        margin-top: 0;
+    }
+    @media screen and (min-width:1200px){
+        padding: 0;
+    }
+}
+p.main-text{
+    height: 50px;
+    @media screen and (min-width: 768px) and (max-width: 1200px){
+        height: 75px;
+        p.main-text:nth-child(2n+1){
+            height: 50px;
+        }
+    }
+    @media screen and (min-width: 1200px){
+        height: 75px;
+    }
+}
+.item-backgraund{
+    background-color: $bg-items;
+    height: 120px;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    text-align: center;
+    width: 100%;
+}
+
+.features{
+    width: 65px;
+    height: 70px;
+    background-color: $bg-items;
+    display: inline-block;
+    &:hover{
+       fill: $accent-cl;
+    }
+}
+.list-position-item-title{
+    width: 100%;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    text-align: center;
+}

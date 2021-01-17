@@ -12,24 +12,11 @@
     margin-left: 0;  
 }
 
+.flex {
+    display: flex;
+    margin-bottom: 25px;
+}
 
-.item-backgraund{
-    background-color: $bg-items;
-    width: 270px;
-    height: 120px;
-    padding-top: 25px;
-    padding-bottom: 25px;
-    text-align: center;
-}
-.features{
-    width: 65px;
-    height: 70px;
-    background-color: $bg-items;
-    display: inline-block;
-    &:hover{
-       fill: $accent-cl;
-    }
-}
 .portfolio-list{
     display: flex;
     list-style: none;
