@@ -70,19 +70,57 @@
     h3.subscribe{
         text-align: center;
     }
-// }
-// @media screen and (min-width: 480px) and (max-width: 768px){
-//     .inline-information{
-//         display: inline;
-//         min-width: 480px;
-//     }
-//     .inline-information-item{
-//         justify-self: center;
-//         list-style: none;
-//         margin: 0;
-//         padding: 0;
-//     }
-// }
+}
+@media screen and (max-width: 767px){
+    .inline-information{
+        display: inline;
+        min-width: 767px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .inline-information-item{
+        justify-content: center;
+        list-style: none;
+        margin: 0;
+        padding: 0;
+    }
+    .logo-footer{
+        max-width: 154px;
+        margin-right: auto;
+        margin-left: auto;
+    }
+    ul.list-item{
+        justify-content: center;
+        display: block;
+        max-width: 232px;
+        margin-right: auto;
+        margin-left: auto;
+    }
+    .join-social{
+        margin-top: 60px;
+        justify-content: center;
+        display: block;
+        margin-right: auto;
+        margin-left: auto;
+        padding-left: 0;
+        padding-right: 0;
+    }
+    .social-icons{
+        width: 218px;
+        display: block;
+        margin-top: 10px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    h3.join{
+        width: 100%;
+        text-align: center;
+    }
+    h3.subscribe{
+        width: 100%;
+        text-align: center;
+    }
+}
 // @media screen and (min-width: 768px) and (max-width: 1200px){
 //     .inline-information{
 //         display: inline;
@@ -94,7 +132,7 @@
 //         margin: 0;
 //         padding: 0;
 //     }
-}
+
 @media screen and (min-width: 1200px){
     .inline-information{
         display: inline-flex;
@@ -166,16 +204,33 @@ figure{
     margin-left: 93px;
     @media screen and(max-width: 768px){
         width: 100%;
-        max-width: 480px;
+        max-width: 768px;
         padding-left: 0;
         padding-right: 0;
         margin-left: 0;
         margin-right: 0;
     }
+    @media screen and (min-width: 768px) and (max-width: 1200px){
+        width: 100%;
+        max-width: 768px;
+        padding-left: 0;
+        padding-right: 0;
+        margin-left: auto;
+        margin-right: auto;
+    }
 }
 .subscribe-form{
     @media screen and(max-width: 768px){
-        width: 100%;
+        max-width: 768px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 20px;
+    }
+    @media screen and (min-width: 768px) and (max-width: 1200px){
+        width: 450px;
+        min-width: 768px;
+        margin-left: auto;
+        margin-right: auto;
         margin-top: 20px;
     }
     @media screen and(min-width: 1200px){
@@ -200,13 +255,28 @@ figure{
     padding-left: 16px;
     padding-bottom: 15px;
     padding-right: 16px;
-    @media screen and(max-width: 768px){
+    @media screen and (max-width: 480px){
         width: 100%;
+        max-width: 450px;
+        padding-right: 0;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    @media screen and (min-width:480px) and(max-width: 768px){
+        display: block;
+        width: 450px;
         max-width: 480px;
+        padding-right: 0;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    @media screen and (min-width: 768px) and (max-width: 1200px){
+        width: 450px;
+        max-width: 768px;
         padding-left: 0;
         padding-right: 0;
-        margin-left: 0;
-        margin-right: 0;
+        margin-left: auto;
+        margin-right: auto;
     }
 }
 .subscribe-btn{
@@ -236,8 +306,14 @@ figure{
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     fill: $whait-cl;
     cursor: pointer;
-    @media screen and(max-width: 768px){
-        max-width: 480px;
+    @media screen and (max-width: 480px){
+        width: 200px;
+        margin-top: 20px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    @media screen and (min-width:480px) and(max-width: 768px){
+        width: 200px;
         padding-left: 29px;
         padding-right: 0;
         margin-top: 20px;

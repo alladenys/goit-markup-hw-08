@@ -1,7 +1,10 @@
 html {
     box-sizing: border-box;
 }
-
+html, body {
+    /* Убирает прокрутку по горизонтале, для мобильной версии */
+    overflow-x: hidden;
+}
 *,
 *::before,
 *::after {
