@@ -1390,6 +1390,52 @@ p.main-text {
   }
 }
 
+@media screen and (min-width: 768px) and (max-width: 1200px) {
+  .inline-information {
+    max-width: 768px;
+    padding-left: 0;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .inline-information-item {
+    list-style: none;
+    position: relative;
+    justify-content: center;
+  }
+  .inline-information-item:nth-child(1),
+  .inline-information-item:nth-child(2) {
+    width: calc(100%/2);
+    max-width: 380px;
+    display: inline-block;
+    height: 247px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+  .inline-information-item:nth-child(2) {
+    position: absolute;
+    margin-top: 60px;
+  }
+  .inline-information-item:nth-child(3) {
+    text-align: center;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+  }
+  .contacts-list,
+  .logo-footer,
+  .list-item,
+  .join {
+    justify-content: center;
+    text-align: center;
+  }
+  .list-item {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
 @media screen and (min-width: 1200px) {
   .inline-information {
     display: inline-flex;
@@ -1457,6 +1503,8 @@ figure p {
 
 .inline-information li {
   list-style: none;
+  padding-left: 0;
+  padding-right: 0;
 }
 
 .subscribe-newsletter {
@@ -1498,7 +1546,6 @@ figure p {
 
 @media screen and (min-width: 768px) and (max-width: 1200px) {
   .subscribe-form {
-    width: 450px;
     min-width: 768px;
     margin-left: auto;
     margin-right: auto;
@@ -1604,6 +1651,17 @@ figure p {
 }
 
 @media screen and (min-width: 480px) and (max-width: 768px) {
+  .subscribe-btn {
+    width: 200px;
+    padding-left: 29px;
+    padding-right: 0;
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1200px) {
   .subscribe-btn {
     width: 200px;
     padding-left: 29px;
