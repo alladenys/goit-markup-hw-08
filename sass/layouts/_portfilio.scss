@@ -1,36 +1,51 @@
 .main {
-    background-color:$whait-cl;
-    border: 1px solid #ECECEC
+  background-color: $whait-cl;
+  border: 1px solid #ececec;
 }
-.portfolio-container{
-    padding-top: 174px;
-    margin: 0;
-    margin-bottom: 50px;
-    justify-content: center;
+.portfolio-container {
+  padding-top: 174px;
+  margin: 0;
+  margin-bottom: 50px;
+  justify-content: center;
 }
 .portfolio-container-item {
-    margin-left: 0;  
+  margin-left: 0;
 }
 
 .flex {
-    display: flex;
-    margin-bottom: 25px;
+  display: flex;
 }
 
-.portfolio-list{
-    display: flex;
-    list-style: none;
+.portfolio-list {
+  display: flex;
+  list-style: none;
 }
-.backgraund {
+@media screen and (min-width: 1200px) {
+  .backgraund {
     padding-top: 200px;
     height: 600px;
     background: radial-gradient(
         circle at center,
-        rgba(47,48,58,0.4),
-        rgba(47,48,58,0.4)
-      ),url(../images/Img-bg.png);
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url(../images/Img-bg.png);
+  }
 }
-.backgraund-down{
-    background-color: #2F303A;
-    height: auto;
+@media screen and (max-width: 480px) {
+    .backgraund {
+      padding-top: 200px;
+      height: 400px;
+      background: radial-gradient(
+          circle at center,
+          rgba(47, 48, 58, 0.4),
+          rgba(47, 48, 58, 0.4)
+        ),
+        url(../images/Img-bg.png);
+    }
+  }
+
+.backgraund-down {
+  background-color: #2f303a;
+  height: auto;
 }

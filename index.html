@@ -15,25 +15,37 @@
              <a class="logo" href="#studio">
                  <span class="logo1">Web</span><span class="logo2">Studio</span>
              </a>
-             <ul class="list left-list">  
-                 <li class="link-item active"><a class="link" href="#studio">Студия</a></li>
-                 <li class="link-item"><a class="link" href="portfolio.html">Портфолио</a></li>
-                 <li class="link-item"><a class="link" href="#contacts">Контакты</a></li>
-             </ul> 
-             <ul class="list right-list">
-                 <li class="link-item-right">
-                     <a class="link icon-header" href="mailto:info@devstudio.com">
-                         <svg class="icon-header-item1">
-                             <use href="./icons/sprit.svg#icon-envelope"></use>
-                        </svg><span>info@devstudio.com</span></a>
-                    </li>
-                 <li class="link-item-right">
-                     <a  class="link icon-header" href="tel:++380961111111">
-                         <svg class="icon-header-item2">
-                             <use href="./icons/sprit.svg#icon-smartphone"></use>
-                        </svg><span>+38 096 111 11 11</span></a>
-                    </li>
-             </ul>  
+             <button type="button" class="menu-button" aria-expanded="false" aria-controls="" data-menu-button> 
+                 <svg class="svg-menu" width="20", height="20" aria-label="Переключатель меню">
+                     <use class="icon-close" href="./icons/mobil-sprite.svg#icon-close"></use>
+                     <use class="icon-menu" href="./icons/mobil-sprite.svg#icon-menu"></use>
+                 </svg>
+             </button>
+             <div class="menu-container" data-menu id="menu-container"> 
+                 <div class="navigation">
+                    <ul class="list left-list">  
+                        <li class="link-item active"><a class="link" href="#studio">Студия</a></li>
+                        <li class="link-item"><a class="link" href="portfolio.html">Портфолио</a></li>
+                        <li class="link-item"><a class="link" href="#contacts">Контакты</a></li>
+                    </ul> 
+                 </div>
+                 <div class="contacts">
+                    <ul class="list right-list">
+                        <li class="link-item-right">
+                            <a class="link icon-header" href="mailto:info@devstudio.com">
+                                <svg class="icon-header-item1">
+                                    <use href="./icons/sprit.svg#icon-envelope"></use>
+                               </svg><span>info@devstudio.com</span></a>
+                           </li>
+                        <li class="link-item-right">
+                            <a  class="link icon-header" href="tel:++380961111111">
+                                <svg class="icon-header-item2">
+                                    <use href="./icons/sprit.svg#icon-smartphone"></use>
+                               </svg><span>+38 096 111 11 11</span></a>
+                           </li>
+                    </ul>  
+                 </div>
+             </div>
          </nav>
         </div>
     </header> 
@@ -132,7 +144,23 @@
             <h2 class="title, section-title team-titel">Наша команда</h2>
             <ul class="list list-position-team">
                  <li class="list-position-team list-contacts-img">
-                    <img class="list-contacts-img" src="./images/img-1.jpg" width="270" height="260" alt="Игорь Демьяненко"/>
+                        <picture>
+                              <source srcset="./images/tel/tel-img1.webp 450w, 
+                               ./images/tel/tel-img1@2x.webp 900w, 
+                               ./images/tel/tel-img1@3x.webp 1350w"
+                               type="image/webp"
+                               media="(max-width: 480px)"
+                               sizes="(max-width: 768px) 100vw"
+                               src="./images/tel/tel-img1.jpg"/>
+                               <source srcset="./images/tab-img1/.webp 354w, 
+                               ./images/tab/tab-img1@2x.webp 708w, 
+                               ./images/tab/tab-img1@3x.webp 1608w"
+                               type="image/webp"
+                               media="(max-width: 768px)"
+                               sizes="(min-width: 768px), (max-width: 1200px) 100vw, 100vw"
+                               src="./images/tel/tel-img1.jpg"/>
+                               <img class="list-contacts-img" src="./images/tel/tel-img1.jpg 450w, ./images/tab/tab-img1.jpg 354w" alt="Игорь Демьяненко"/>
+                         </picture>   
                     <h3 class="contacts-information">Игорь Демьяненко</h3>
                     <p class="job-description" lang="en">Product Designer</p>
                         <ul class="social-icons">
@@ -259,5 +287,6 @@
         </div>
     </footer>
     <script src="./js/modal.js"></script>
+    <script src="./js/menu.js"></script>
 </body>
 </html> 
