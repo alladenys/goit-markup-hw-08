@@ -44,6 +44,7 @@
     top: 60px;
     left: 0;
     width: 100%;
+    max-width: 480px;
     height: 768px;
     font-size: 40px;
     padding-left: 40px;
@@ -52,8 +53,9 @@
     padding-bottom: 48px;
   }
   .media{
+    width: 100%;
     padding: 0;
-    margin-top: 64px;
+    margin-top: 0.08%;
   }
   .media li{
     display: inline-block;
@@ -61,9 +63,7 @@
     margin-left: 0;
     padding-left: 0;
     border: none;
-  }
-  .media li:not(:last-child){
-    margin-right: 20px;
+    width: calc((100% - 6)/4);
   }
   .media a{
     font-weight: 500;
@@ -71,6 +71,7 @@
     line-height: 1.22;
     letter-spacing: 0.02em;
     color: $accent-cl;
+    text-align: center;
   }
   .media a:hover,
   .media a:focus{

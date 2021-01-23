@@ -489,6 +489,7 @@ label.fake {
     top: 60px;
     left: 0;
     width: 100%;
+    max-width: 480px;
     height: 768px;
     font-size: 40px;
     padding-left: 40px;
@@ -499,8 +500,9 @@ label.fake {
 }
 
 .menu-container .media {
+  width: 100%;
   padding: 0;
-  margin-top: 64px;
+  margin-top: 0.08%;
 }
 
 .menu-container .media li {
@@ -509,10 +511,7 @@ label.fake {
   margin-left: 0;
   padding-left: 0;
   border: none;
-}
-
-.menu-container .media li:not(:last-child) {
-  margin-right: 20px;
+  width: calc((100% - 6)/4);
 }
 
 .menu-container .media a {
@@ -521,6 +520,7 @@ label.fake {
   line-height: 1.22;
   letter-spacing: 0.02em;
   color: #2196F3;
+  text-align: center;
 }
 
 .menu-container .media a:hover,
