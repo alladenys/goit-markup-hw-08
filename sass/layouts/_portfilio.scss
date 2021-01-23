@@ -14,6 +14,10 @@
 
 .flex {
   display: flex;
+  height: 60px;
+  @media screen and ( min-width: 1200px) {
+    height: 80px;
+  }
 }
 
 .portfolio-list {
