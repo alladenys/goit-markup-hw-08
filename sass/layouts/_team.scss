@@ -1,85 +1,110 @@
-
 .section-title {
-    font-weight: 700;
-    font-size: 36px;
-    line-height: 1.167;
-    letter-spacing: 0.03em;
-    color: $black-cl;
-    text-align: center;
-    margin-top: 0;
-    margin-bottom: 50px;
-
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.167;
+  letter-spacing: 0.03em;
+  color: $black-cl;
+  text-align: center;
+  margin-top: 0;
+  margin-bottom: 50px;
 }
-.list-img{
-    display: inline-flex;
-    margin-top: 0;
-    margin-bottom: 94px;
-    padding-left: 0;
+.list-img {
+  display: inline-flex;
+  margin-top: 0;
+  margin-bottom: 94px;
+  padding-left: 0;
 }
-.list-item-position{
-    margin-bottom: 0px;
-    width: 370px;
-    height: 294px;
+.list-item-position {
+  margin-bottom: 0px;
+  width: 370px;
+  height: 294px;
 }
-.list-item-position:not(:last-child){
-    margin-right: 30px;
-    margin-left: 0px;
+.list-item-position:not(:last-child) {
+  margin-right: 30px;
+  margin-left: 0px;
 }
 
 .text-box {
-    width: 100%;
-    height: 75px;
-   
+  width: 100%;
+  height: 75px;
 }
 .job-description {
-    height: 19px;
-    font-size: 16px;
-    line-height: 1.187;
-    letter-spacing: 0.03em;
-    color: $main-text-cl;
-    margin-top: 10px;
-    margin-bottom: 16px;
-    text-align: center;
-    width: 270px;
+  height: 19px;
+  font-size: 16px;
+  line-height: 1.187;
+  letter-spacing: 0.03em;
+  color: $main-text-cl;
+  margin-top: 10px;
+  margin-bottom: 16px;
+  text-align: center;
+  width: 270px;
+  @media screen and (max-width: 768px) {
+    width: 100%;
+    margin-bottom: 0;
+  }
 }
 .introduction {
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 1.187;
-    letter-spacing: 0.03em;
-    color: $black-cl;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.187;
+  letter-spacing: 0.03em;
+  color: $black-cl;
 }
-.team-box{
-    height: 648px;
-    background-color: #F5F4FA;
-    box-sizing: inherit;
+.team-box {
+  height: 648px;
+  background-color: #f5f4fa;
+  box-sizing: inherit;
+  @media screen and (max-width: 768px) {
+    height: 2761px;
+  }
 }
 .team-titel {
-    padding-top: 94px;
-    margin-bottom: 30px;
+  padding-top: 94px;
+  margin-bottom: 30px;
+  @media screen and (max-width: 768px) {
+    padding-top: 60px;
+  }
 }
-.list-position-team{
-    margin-top: 0;
-    margin-left: 0;
-    padding-left: 0;
-    margin-bottom: 0;
+.list-position-team {
+  margin-top: 0;
+  margin-left: 0;
+  padding-left: 0;
+  margin-bottom: 0;
+  @media screen and (min-width: 1200px) {
     width: 270px;
     height: 428px;
-}
-.list-contacts-img{
-    background-color: $whait-cl;
-    margin-top: 0;
-    margin-right: 0;
-    width: 270px;
-    &:not(:last-child){
-        margin-right: 30px;
+  }
+  @media screen and (max-width: 768px) {
+    & li.list-contacts-img {
+      margin-left: auto;
+      margin-right: auto;
+      margin-top: 16px;
+      height: 100%;
+      max-height: 622px;
     }
+  }
 }
-.contacts-information { 
-    font-weight: 500px;
-    margin-top: 30px;
-    margin-bottom: 0px;
-    text-align: center;
-    height: 19px;
-    width: 270px;
+.list-contacts-img {
+  background-color: $whait-cl;
+  margin-top: 0;
+  margin-right: 0;
+  width: 100%;
+  max-width: 450px;
+  @media screen and (min-width: 1200px) {
+    height: 460px;
+    &:not(:last-child) {
+      margin-right: 30px;
+    }
+  }
+}
+.contacts-information {
+  font-weight: 500px;
+  margin-top: 30px;
+  margin-bottom: 0px;
+  text-align: center;
+  height: 19px;
+  width: 270px;
+  @media screen and (max-width: 768px) {
+    width: 100%;
+  }
 }

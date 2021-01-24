@@ -8,11 +8,6 @@ html {
     box-sizing: inherit;
     
 }
-*::before,
-*::after {
-    box-sizing: inherit;
-    outline: 1pc solid red;
-}
 body {
     font-family: "Roboto", sans-serif;
     font-size: 14px;
