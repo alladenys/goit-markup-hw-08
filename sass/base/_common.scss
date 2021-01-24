@@ -1,14 +1,17 @@
 html {
     box-sizing: border-box;
 }
-html, body {
-    /* Убирает прокрутку по горизонтале, для мобильной версии */
-    overflow-x: hidden;
-}
+
 *,
 *::before,
 *::after {
     box-sizing: inherit;
+    
+}
+*::before,
+*::after {
+    box-sizing: inherit;
+    outline: 1pc solid red;
 }
 body {
     font-family: "Roboto", sans-serif;
