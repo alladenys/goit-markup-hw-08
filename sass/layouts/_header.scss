@@ -81,7 +81,12 @@ nav.flex a.active {
 }
 @media screen and (min-width: 1200px) {
   .left-list {
+    position: absolute;
+    top: 32px;
+    left: 238px;
+    display: flex;
     width: 343px;
+    margin-top: 0;
     margin-left: 0;
     margin-right: 0;
     padding-left: 0;
@@ -89,15 +94,17 @@ nav.flex a.active {
     align-items: center;
   }
   .right-list {
+    position: absolute;
+    top: 32px;
+    left: 836px;
+    display: flex;
     font-weight: 500;
-    margin-left: 305px;
+    margin-top: 0;
+    margin-left: 0px;
     margin-right: 0;
     padding-inline-start: 0;
     margin-bottom: 0;
-    color: $main-text-cl;
-  }
-  .right-list:nth-child(2n+1){
-    margin-top: 32px;
+    color: $black-cl;
   }
 }
 @media screen and (max-width: 768px) {
