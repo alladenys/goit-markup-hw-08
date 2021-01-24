@@ -7,12 +7,15 @@
   text-align: center;
   margin-top: 0;
   margin-bottom: 50px;
+  @media screen and ( min-width: 1200px ){
+    margin-top: 94px;
+  }
 }
 .list-img {
   display: inline-flex;
   margin-top: 0;
-  margin-bottom: 94px;
   padding-left: 0;
+
 }
 .list-item-position {
   margin-bottom: 0px;
@@ -51,7 +54,7 @@
   color: $black-cl;
 }
 .team-box {
-  height: 648px;
+  // height: 648px;
   background-color: #f5f4fa;
   box-sizing: inherit;
   @media screen and (max-width: 768px) {
@@ -68,6 +71,13 @@
     margin-bottom: 60px;
     height: 1345px;
   }
+  @media screen and ( min-width: 1200px) {
+    width: 100%;
+    height: 708px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 60px;
+  }
 }
 .team-titel {
   justify-content: center;
@@ -83,8 +93,18 @@
   padding-left: 0;
   margin-bottom: 0;
   @media screen and (min-width: 1200px) {
-    width: 270px;
+    margin-top: 0;
+    margin-left: 0;
+    padding-left: 0;
+    margin-bottom: 0;
+    width: 100%;
     height: 428px;
+    & li.list-contacts-img {
+      display: inline-block;
+      width: calc((100% - 136px) / 4);
+      max-width: 270px;
+      margin-top: 16px;
+    }
   }
   @media screen and (max-width: 768px) {
     & li.list-contacts-img {
@@ -112,7 +132,6 @@
       margin-right: 30px;
     }
   } 
-
 }
 .list-contacts-img {
   background-color: $whait-cl;
@@ -121,7 +140,7 @@
   width: 100%;
   max-width: 450px;
   @media screen and (min-width: 1200px) {
-    height: 460px;
+    height: auto;
     &:not(:last-child) {
       margin-right: 30px;
     }

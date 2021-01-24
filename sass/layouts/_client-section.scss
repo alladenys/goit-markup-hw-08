@@ -109,10 +109,12 @@
     }  
   }
   @media screen and (min-width: 1200px) {
+    margin-bottom: 0;
     .client-logo {
       width: calc((100% - 168px) / 6);
       display: inline-block;
       max-width: 1200px;
+      margin-bottom: 94px;
     }
     .client-logo:last-child {
       margin-right: 0;

@@ -838,7 +838,6 @@ nav.flex a.active {
 }
 
 .list-position {
-  margin-top: 60px;
   padding-left: 0;
   margin-bottom: 0;
 }
@@ -873,6 +872,7 @@ nav.flex a.active {
 
 @media screen and (min-width: 1200px) {
   .list-position-item {
+    margin-top: 94px;
     max-width: 270px;
     margin-right: 30px;
   }
@@ -1198,10 +1198,15 @@ p.main-text {
   margin-bottom: 50px;
 }
 
+@media screen and (min-width: 1200px) {
+  .section-title {
+    margin-top: 94px;
+  }
+}
+
 .list-img {
   display: inline-flex;
   margin-top: 0;
-  margin-bottom: 94px;
   padding-left: 0;
 }
 
@@ -1249,7 +1254,6 @@ p.main-text {
 }
 
 .team-box {
-  height: 648px;
   background-color: #f5f4fa;
   box-sizing: inherit;
 }
@@ -1274,6 +1278,16 @@ p.main-text {
   }
 }
 
+@media screen and (min-width: 1200px) {
+  .team-box {
+    width: 100%;
+    height: 708px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 60px;
+  }
+}
+
 .team-titel {
   justify-content: center;
   padding-top: 94px;
@@ -1295,8 +1309,18 @@ p.main-text {
 
 @media screen and (min-width: 1200px) {
   .list-position-team {
-    width: 270px;
+    margin-top: 0;
+    margin-left: 0;
+    padding-left: 0;
+    margin-bottom: 0;
+    width: 100%;
     height: 428px;
+  }
+  .list-position-team li.list-contacts-img {
+    display: inline-block;
+    width: calc((100% - 136px) / 4);
+    max-width: 270px;
+    margin-top: 16px;
   }
 }
 
@@ -1340,7 +1364,7 @@ p.main-text {
 
 @media screen and (min-width: 1200px) {
   .list-contacts-img {
-    height: 460px;
+    height: auto;
   }
   .list-contacts-img:not(:last-child) {
     margin-right: 30px;
@@ -1556,10 +1580,14 @@ p.main-text {
 }
 
 @media screen and (min-width: 1200px) {
+  .client-logo-list {
+    margin-bottom: 0;
+  }
   .client-logo-list .client-logo {
     width: calc((100% - 168px) / 6);
     display: inline-block;
     max-width: 1200px;
+    margin-bottom: 94px;
   }
   .client-logo-list .client-logo:last-child {
     margin-right: 0;
