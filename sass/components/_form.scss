@@ -1,193 +1,207 @@
-
-.recole-form{
-    display: block;
-    height: 478px;
-    width: inherit;
+.recole-form {
+  display: block;
+  height: 478px;
+  width: inherit;
 }
-.label-text{
-    display: block;
-    padding: 0;
-    margin: 0;
-    margin-top: 10px;
-    font-weight: normal;
-    font-size: 12px;
-    line-height: 1.17;
-    letter-spacing: 0.01em;
-    color: #757575;
+.label-text {
+  display: block;
+  padding: 0;
+  margin: 0;
+  margin-top: 10px;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: 0.01em;
+  color: #757575;
 }
-.recole-form-feald{
-    margin-top: 4px;
-    margin-bottom: 0;
-    border: 1px solid rgba(33, 33, 33, 0.2);
-    background: transparent;
-    width: 448px;
-    height: 40px;
-    color: $black-cl;
-    font-style: normal;
-    font-size:16px;
-    line-height: 1.25;
-    letter-spacing: 3%;
-    resize: none;
-    border-radius: 4px;
-    padding-top: 12px;
-    padding-right: 16px;
-    padding-bottom: 12px;
-    padding-left: 16px;
-    &:focus,
-    &:hover{
-        border: 1px solid #2196F3;
-        border-radius: 4px;
-        box-shadow: none;
-        outline: none;
-        cursor: pointer;
-    }
-}
-.svg-form1{
-    position: absolute;
-    top: 107px;
-    left: 56px;
-    fill: $black-cl;
-}
-.svg-form2{
-    position: absolute;
-    top: 175px;
-    left: 56px;
-    fill: $black-cl;
-}
-.svg-form3{
-    position: absolute;
-    top: 242px;
-    left: 56px;
-    fill: $black-cl;
-}
-.svg-form1:hover,
-.svg-form2:hover,
-.svg-form3:hover{
-    fill: $accent-cl;
-}
-textarea.recole-form-feald{
-    height: 120px;
-    &:hover,
-    &:focus{
-        border: 1px solid #2196F3;
-        border-radius: 4px;
-        box-shadow: none;
-        outline: none;
-        cursor: pointer;
-    }
-}
-form.recole-form input.recole-form-feald{
-    position: relative;
-}
-.recole-form input.recole-form-feald:focus,
-.recole-form input.recole-form-feald:hover{
-    cursor: pointer;
-    border: 1px solid #2196F3;
-    box-sizing: border-box;
+.recole-form-feald {
+  margin-top: 4px;
+  margin-bottom: 0;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  background: transparent;
+  width: 448px;
+  height: 40px;
+  color: $black-cl;
+  font-style: normal;
+  font-size: 16px;
+  line-height: 1.25;
+  letter-spacing: 3%;
+  resize: none;
+  border-radius: 4px;
+  padding-top: 12px;
+  padding-right: 16px;
+  padding-bottom: 12px;
+  padding-left: 16px;
+  &:focus,
+  &:hover {
+    border: 1px solid #2196f3;
     border-radius: 4px;
     box-shadow: none;
     outline: none;
+    cursor: pointer;
+  }
+}
+.svg-form1 {
+  position: absolute;
+  top: 107px;
+  left: 56px;
+  fill: $black-cl;
+}
+.svg-form2 {
+  position: absolute;
+  top: 175px;
+  left: 56px;
+  fill: $black-cl;
+}
+.svg-form3 {
+  position: absolute;
+  top: 242px;
+  left: 56px;
+  fill: $black-cl;
+  @media screen and (max-width: 481px) {
+    .svg-form1 {
+      position: absolute;
+      top: 125px;
+    }
+    .svg-form2 {
+      position: absolute;
+      top: 193px;
+    }
+    .svg-form3 {
+      position: absolute;
+      top: 259px;
+    }
+  }
+}
+.svg-form1:hover,
+.svg-form2:hover,
+.svg-form3:hover {
+  fill: $accent-cl;
+}
+textarea.recole-form-feald {
+  height: 120px;
+  &:hover,
+  &:focus {
+    border: 1px solid #2196f3;
+    border-radius: 4px;
+    box-shadow: none;
+    outline: none;
+    cursor: pointer;
+  }
+}
+form.recole-form input.recole-form-feald {
+  position: relative;
+}
+.recole-form input.recole-form-feald:focus,
+.recole-form input.recole-form-feald:hover {
+  cursor: pointer;
+  border: 1px solid #2196f3;
+  box-sizing: border-box;
+  border-radius: 4px;
+  box-shadow: none;
+  outline: none;
 }
 
 input.recole-form-feald:focus + svg.svg-form1,
 input.recole-form-feald:focus + svg.svg-form2,
-input.recole-form-feald:focus + svg.svg-form3{
-    fill: $accent-cl;
+input.recole-form-feald:focus + svg.svg-form3 {
+  fill: $accent-cl;
 }
 
-.checkbox{
-    display: none;
-    position: absolute;
-    z-index: -1;
-    opacity: 0;
-    &+label {
-      display: inline-flex;
-      align-items: center;
-    }
-    &+label::before {
-      content: '';
-      display: inline-block;
-      width: 16px;
-      height: 15px;
-      border: 2px solid black;
-      border-radius: 2px;
-    }
-    &:checked+label::before {
-      border-color: #0b76ef;
-      background-color: #0b76ef;
-      background-image: url(../icons/confirm.svg);
+.checkbox {
+  display: none;
+  position: absolute;
+  z-index: -1;
+  opacity: 0;
+  & + label {
+    display: inline-flex;
+    align-items: center;
+  }
+  & + label::before {
+    content: "";
+    display: inline-block;
+    width: 16px;
+    height: 15px;
+    border: 2px solid black;
+    border-radius: 2px;
+  }
+  &:checked + label::before {
+    border-color: #0b76ef;
+    background-color: #0b76ef;
+    background-image: url(../icons/confirm.svg);
     cursor: pointer;
-    }
-    &:not(:disabled):not(:checked)+label:hover::before {
-      border-color: #0b76ef;
-    }
+  }
+  &:not(:disabled):not(:checked) + label:hover::before {
+    border-color: #0b76ef;
+  }
 }
 .fake-checkbox {
-    display: flex;
-    margin-left: 13px;
-    margin-top: 15px;
-    height: 24px;
-    margin-bottom: 0;
-    padding: 0;
-    font-weight: normal;
-    font-size: 14px;
-    line-height: 1.71;
-    letter-spacing: 0.03em;
-    color: #757575;
-    padding-top: 7px;
+  display: flex;
+  margin-left: 13px;
+  margin-top: 15px;
+  height: 24px;
+  margin-bottom: 0;
+  padding: 0;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: #757575;
+  padding-top: 7px;
 }
-label.fake{
-    margin: 0;padding: 0;
+label.fake {
+  margin: 0;
+  padding: 0;
 }
-.agreement-conditions{
-    font-weight: normal;
-    margin-left: 3px;margin-right: 0;
-    font-size: 14px;
-    line-height: 1.71;
-    letter-spacing: 0.03em;
-    color: $accent-cl;
+.agreement-conditions {
+  font-weight: normal;
+  margin-left: 3px;
+  margin-right: 0;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: $accent-cl;
 }
 .recole-form {
-    &label{
-      margin-top: 12px;
-      margin-bottom: 4px;
-    }
-    & label:not(:first-child){
-        margin-top: 10px;
-    }
-    & input{
-        padding-left: 35px;
-        padding-right: 35px;
-    }
-    & input:not(:last-child){
-        margin-bottom: 0px;
-    }
-    & span{
-        margin-left: 9px;
-    }
+  &label {
+    margin-top: 12px;
+    margin-bottom: 4px;
+  }
+  & label:not(:first-child) {
+    margin-top: 10px;
+  }
+  & input {
+    padding-left: 35px;
+    padding-right: 35px;
+  }
+  & input:not(:last-child) {
+    margin-bottom: 0px;
+  }
+  & span {
+    margin-left: 9px;
+  }
 }
 
-.btn-send-recol{
-    height: 50px;
-    width: 200px;
-    margin-top: 30px;
-    margin-right: 124px;
-    margin-bottom: 40px;
-    margin-left: 124px;
-    background: #188CE8;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-    border: 1 solid $accent-cl;
-    border-radius: 4px;
-    color: $whait-cl;
-    font-weight: bold;
-    font-size: 16px;
-    line-height: 1.87;
-    align-items: center;
-    letter-spacing: 0.06em;
-    overflow: hidden;
-    &:hover,
-    &:focus{
-      cursor: pointer;
-    }
+.btn-send-recol {
+  height: 50px;
+  width: 200px;
+  margin-top: 30px;
+  margin-right: 124px;
+  margin-bottom: 40px;
+  margin-left: 124px;
+  background: #188ce8;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border: 1 solid $accent-cl;
+  border-radius: 4px;
+  color: $whait-cl;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 1.87;
+  align-items: center;
+  letter-spacing: 0.06em;
+  overflow: hidden;
+  &:hover,
+  &:focus {
+    cursor: pointer;
+  }
 }
-
