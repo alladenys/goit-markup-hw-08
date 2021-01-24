@@ -1383,13 +1383,23 @@ p.main-text {
   box-sizing: inherit;
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 400px) {
   .team-box {
     width: 100%;
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 60px;
     height: 2320px;
+  }
+}
+
+@media screen and (min-width: 400px) and (max-width: 480px) {
+  .team-box {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 60px;
+    height: 2520px;
   }
 }
 

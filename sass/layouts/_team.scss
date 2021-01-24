@@ -56,14 +56,20 @@
   // height: 648px;
   background-color: #f5f4fa;
   box-sizing: inherit;
-  @media screen and (max-width: 480px) {
+  @media screen and (max-width: 400px) {
     width: 100%;
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 60px;
     height: 2320px;
   }
-
+  @media screen and (min-width: 400px) and (max-width: 480px) {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 60px;
+    height: 2520px;
+  }
   @media screen and (min-width: 480px) and (max-width: 768px) {
     width: 100%;
     margin-left: auto;
