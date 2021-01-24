@@ -1996,6 +1996,14 @@ p.main-text {
 @media screen and (min-width: 1200px) {
   .inline-information {
     display: inline-flex;
+    margin: 0;
+    margin-bottom: 60px;
+  }
+  .contacts-list {
+    margin-bottom: 0;
+  }
+  .logo-footer a.logo-position {
+    margin-bottom: 0;
   }
   .inline-information-item {
     list-style: none;
