@@ -1,170 +1,177 @@
 .project-name {
-    font-weight: bold;
-    font-size: 18px;
-    line-height: 2.0;
-    letter-spacing: 0.06em;
-    color: $main-text-cl;
-    padding-left: 24px;
-    padding-right: 24px;
-    margin-top: 20px;
-    margin-bottom: 0;
-    width: 370px;
-    margin-right: 0;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+  color: $main-text-cl;
+  padding-left: 24px;
+  padding-right: 24px;
+  margin-top: 20px;
+  margin-bottom: 0;
+  width: 370px;
+  margin-right: 0;
 }
 .project-type {
-    font-size: 16px;
-    line-height: 1.87;
-    letter-spacing: 0.03em;
-    color: $main-text-cl;
-    padding-left: 24px;
-    padding-right: 24px;
-    margin-top: 4px;
-    margin-bottom: 20px;
-    width: 370px;
-    margin-right: 0px;
+  font-size: 16px;
+  line-height: 1.87;
+  letter-spacing: 0.03em;
+  color: $main-text-cl;
+  padding-left: 24px;
+  padding-right: 24px;
+  margin-top: 4px;
+  margin-bottom: 20px;
+  width: 370px;
+  margin-right: 0px;
 }
 
 .btn-portfolio:hover,
 .btn-portfolio:focus {
-    background-color: $accent-cl;
-    color: $whait-cl;
-    border-color: $accent-cl;
+  background-color: $accent-cl;
+  color: $whait-cl;
+  border-color: $accent-cl;
 }
 .logo-position {
-    padding: 0;
-    margin-top: 60px;
-    width: 145px;
-    text-decoration: none;
+  padding: 0;
+  margin-top: 60px;
+  width: 145px;
+  text-decoration: none;
 }
 .list-item {
-    margin-top: 20px;
-    margin-bottom: 0;
-    padding: 0;
-    list-style: none;
-    width: 231px;
-    display: inline-block;
-    &:not(:last-child){
-        margin-bottom: 9px;
-        display: inline-block;
-    }
-}
-.contacts-list{
+  margin-top: 20px;
+  margin-bottom: 0;
+  padding: 0;
+  list-style: none;
+  width: 231px;
+  display: inline-block;
+  &:not(:last-child) {
     margin-bottom: 9px;
-    display: flex;
+    display: inline-block;
+  }
 }
-.client-title{
-    margin-top: 60px;
-    margin-bottom: 60px;
-    @media screen and (min-width) {
-        margin-top: 94px;
-        margin-bottom: 94px;
-      }
+.contacts-list {
+  margin-bottom: 9px;
+  display: flex;
 }
-.client-logo{
-    display: inline;
-    margin-right: 30px;
+.client-title {
+  margin-top: 60px;
+  margin-bottom: 60px;
+  @media screen and (min-width) {
+    margin-top: 94px;
+    margin-bottom: 94px;
+  }
 }
-
-.client-logo-list{
-    margin-top: 0;
-    margin-bottom: 30px;
-    margin-right: 0;
-    margin-left: 0;
-    padding: 0;
-    @media screen and (max-width: 480px) {
-        .client-logo{
-        width: calc((100% - 34px)/2);
-        max-width: 480px;
-        display: inline-block;
-        }
-        .client-logo:nth-child(2n){
-            margin-right: 0;
-        }
-    }
-    @media screen and (min-width: 480px) and (max-width: 767px) {
-        .client-logo{
-        width: calc((100% - 34px)/2);
-        max-width: 480px;
-        display: inline-block;
-        }
-        .client-logo:nth-child(2n){
-            margin-right: 0;
-        }
-    }
-    @media screen and (min-width: 768px) and (max-width: 1200px) {
-        .client-logo{
-        width: calc((100% - 78px)/3);
-        display: inline-block;
-        max-width: 768px;
-        }
-        .client-logo:nth-child(3n){
-            margin-right: 0;
-        }
-    }
-    @media screen and (min-width: 1200px) {
-        .client-logo {
-        width: calc((100% - 168px)/6);
-        display: inline-block;
-        max-width: 1200px;
-        }
-        .client-logo:last-child{
-            margin-right: 0;
-        }
-    }
+.client-logo {
+  display: inline;
+  margin-right: 30px;
 }
 
-.client-logo{
-    height: 90px;
-    border: 1px solid #AFB1B8;
-    border-radius: 4px;
-    box-sizing: border-box;
-    text-align: center;
-    justify-content: center;
-    align-items: center;
-    &:hover{
-      border: 1px solid $accent-cl;
+.client-logo-list {
+  margin-top: 0;
+  margin-bottom: 30px;
+  margin-right: 0;
+  margin-left: 0;
+  padding: 0;
+  @media screen and (max-width: 480px) {
+    .client-logo {
+      width: calc((100% - 34px) / 2);
+      max-width: 480px;
+      display: inline-block;
     }
-    &:hover svg.client-logo-svg{
-      fill: $accent-cl;
+    .client-logo:nth-child(2n) {
+      margin-right: 0;
     }
+  }
+  @media screen and (min-width: 480px) and (max-width: 767px) {
+    .client-logo {
+      width: calc((100% - 34px) / 2);
+      max-width: 480px;
+      display: inline-block;
+    }
+    .client-logo:nth-child(2n) {
+      margin-right: 0;
+    }
+  }
+  @media screen and (min-width: 768px) and (max-width: 1200px) {
+    .client-logo {
+      margin-right: 30px;
+      margin-bottom: 30px;
+      width: calc((100% - 78px) / 3);
+      display: inline-block;
+      max-width: 768px;
+    }
+    .client-logo:nth-child(3n) {
+      margin-right: 0;
+    }
+    .client-logo:nth-child(4),
+    .client-logo:nth-child(5),
+    .client-logo:nth-child(6){
+        margin-bottom: 0;
+    }  
+  }
+  @media screen and (min-width: 1200px) {
+    .client-logo {
+      width: calc((100% - 168px) / 6);
+      display: inline-block;
+      max-width: 1200px;
+    }
+    .client-logo:last-child {
+      margin-right: 0;
+    }
+  }
 }
 
-.client-logo-link{
-    width: 100%;
-    display: flex;
-    box-sizing: border-box;
-    height: 90px;
-    justify-content: center;
-    align-items: center;
+.client-logo {
+  height: 90px;
+  border: 1px solid #afb1b8;
+  border-radius: 4px;
+  box-sizing: border-box;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  &:hover {
+    border: 1px solid $accent-cl;
+  }
+  &:hover svg.client-logo-svg {
+    fill: $accent-cl;
+  }
 }
-.client-logo-svg{
-    text-align: center;
-    margin: 0;
-    padding: 0;
-    fill: #AFB1B8;
+
+.client-logo-link {
+  width: 100%;
+  display: flex;
+  box-sizing: border-box;
+  height: 90px;
+  justify-content: center;
+  align-items: center;
 }
-.logo1{
-    width: 44px;
-    height: 49px;
+.client-logo-svg {
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  fill: #afb1b8;
 }
-.logo2{
-    width: 40px;
-    height: 52px;
+.logo1 {
+  width: 44px;
+  height: 49px;
 }
-.logo3{
-    width: 41px;
-    height: 43px;
+.logo2 {
+  width: 40px;
+  height: 52px;
 }
-.logo4{
-    width: 80px;
-    height: 42px;
-    box-sizing: border-box;
+.logo3 {
+  width: 41px;
+  height: 43px;
 }
-.logo5{
-    width: 59px;
-    height: 47px;
+.logo4 {
+  width: 80px;
+  height: 42px;
+  box-sizing: border-box;
 }
-.logo6{
-    height: 46px;
-    width: 89px;
+.logo5 {
+  width: 59px;
+  height: 47px;
+}
+.logo6 {
+  height: 46px;
+  width: 89px;
 }

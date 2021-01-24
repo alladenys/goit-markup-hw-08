@@ -1256,13 +1256,26 @@ p.main-text {
 
 @media screen and (max-width: 768px) {
   .team-box {
-    height: 100%;
-    max-height: 2761px;
-    padding-bottom: 60px;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 60px;
+    height: 2821px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1200px) {
+  .team-box {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 60px;
+    height: 1345px;
   }
 }
 
 .team-titel {
+  justify-content: center;
   padding-top: 94px;
   margin-bottom: 30px;
 }
@@ -1294,6 +1307,26 @@ p.main-text {
     margin-top: 16px;
     height: 100%;
     max-height: 622px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1200px) {
+  .list-position-team {
+    width: 100%;
+    max-width: 768px;
+    margin-left: auto;
+    margin-right: auto;
+    height: 100%;
+  }
+  .list-position-team li.list-contacts-img {
+    display: inline-block;
+    width: calc((100% - 34px) / 2);
+    max-width: 354px;
+    margin-top: 16px;
+    height: 100%;
+  }
+  .list-position-team li.list-contacts-img:not(:nth-child(2n)) {
+    margin-right: 30px;
   }
 }
 
@@ -1400,7 +1433,7 @@ p.main-text {
 .project-name {
   font-weight: bold;
   font-size: 18px;
-  line-height: 2.0;
+  line-height: 2;
   letter-spacing: 0.06em;
   color: #757575;
   padding-left: 24px;
@@ -1484,7 +1517,7 @@ p.main-text {
 
 @media screen and (max-width: 480px) {
   .client-logo-list .client-logo {
-    width: calc((100% - 34px)/2);
+    width: calc((100% - 34px) / 2);
     max-width: 480px;
     display: inline-block;
   }
@@ -1495,7 +1528,7 @@ p.main-text {
 
 @media screen and (min-width: 480px) and (max-width: 767px) {
   .client-logo-list .client-logo {
-    width: calc((100% - 34px)/2);
+    width: calc((100% - 34px) / 2);
     max-width: 480px;
     display: inline-block;
   }
@@ -1506,18 +1539,25 @@ p.main-text {
 
 @media screen and (min-width: 768px) and (max-width: 1200px) {
   .client-logo-list .client-logo {
-    width: calc((100% - 78px)/3);
+    margin-right: 30px;
+    margin-bottom: 30px;
+    width: calc((100% - 78px) / 3);
     display: inline-block;
     max-width: 768px;
   }
   .client-logo-list .client-logo:nth-child(3n) {
     margin-right: 0;
   }
+  .client-logo-list .client-logo:nth-child(4),
+  .client-logo-list .client-logo:nth-child(5),
+  .client-logo-list .client-logo:nth-child(6) {
+    margin-bottom: 0;
+  }
 }
 
 @media screen and (min-width: 1200px) {
   .client-logo-list .client-logo {
-    width: calc((100% - 168px)/6);
+    width: calc((100% - 168px) / 6);
     display: inline-block;
     max-width: 1200px;
   }
@@ -1528,7 +1568,7 @@ p.main-text {
 
 .client-logo {
   height: 90px;
-  border: 1px solid #AFB1B8;
+  border: 1px solid #afb1b8;
   border-radius: 4px;
   box-sizing: border-box;
   text-align: center;
@@ -1557,7 +1597,7 @@ p.main-text {
   text-align: center;
   margin: 0;
   padding: 0;
-  fill: #AFB1B8;
+  fill: #afb1b8;
 }
 
 .logo1 {
@@ -1607,8 +1647,21 @@ p.main-text {
   color: rgba(255, 255, 255, 0.6);
 }
 
+@media screen and (max-width: 768px) {
+  .contacts {
+    justify-content: center;
+  }
+}
+
 .contacts-box {
+  height: 100%;
   padding-top: 0px;
+}
+
+@media screen and (max-width: 480px) {
+  .contacts-box {
+    max-height: 603px;
+  }
 }
 
 .join {
@@ -1625,7 +1678,12 @@ p.main-text {
 @media screen and (max-width: 480px) {
   .inline-information {
     display: inline;
+    width: 100%;
     min-width: 480px;
+    justify-content: center;
+  }
+  .inline-information:last-child {
+    margin-bottom: 60px;
   }
   .inline-information-item {
     justify-content: center;
@@ -1726,6 +1784,7 @@ p.main-text {
     padding-left: 0;
     margin-left: auto;
     margin-right: auto;
+    margin-bottom: 60px;
   }
   .inline-information-item {
     list-style: none;
@@ -1734,7 +1793,7 @@ p.main-text {
   }
   .inline-information-item:nth-child(1),
   .inline-information-item:nth-child(2) {
-    width: calc(100%/2);
+    width: calc(100% / 2);
     max-width: 380px;
     display: inline-block;
     height: 247px;
@@ -1871,6 +1930,7 @@ figure p {
     margin-left: auto;
     margin-right: auto;
     margin-top: 20px;
+    margin-bottom: 70px;
   }
 }
 
