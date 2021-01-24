@@ -55,7 +55,9 @@
   background-color: #f5f4fa;
   box-sizing: inherit;
   @media screen and (max-width: 768px) {
-    height: 2761px;
+    height: 100%;
+    max-height: 2761px;
+    padding-bottom: 60px;
   }
 }
 .team-titel {

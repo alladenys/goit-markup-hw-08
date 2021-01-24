@@ -1197,7 +1197,9 @@ p.main-text {
 
 @media screen and (max-width: 768px) {
   .team-box {
-    height: 2761px;
+    height: 100%;
+    max-height: 2761px;
+    padding-bottom: 60px;
   }
 }
 
@@ -1397,8 +1399,15 @@ p.main-text {
 }
 
 .client-title {
-  margin-top: 94px;
-  margin-bottom: 50px;
+  margin-top: 60px;
+  margin-bottom: 60px;
+}
+
+@media screen and (min-width) {
+  .client-title {
+    margin-top: 94px;
+    margin-bottom: 94px;
+  }
 }
 
 .client-logo {
