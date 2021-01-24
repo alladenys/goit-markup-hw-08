@@ -7,6 +7,10 @@
   margin: 0;
   margin-bottom: 50px;
   justify-content: center;
+  @media screen and (max-width: 768px) {
+    padding-top: 126px;
+    margin-bottom: 46px;
+  }
 }
 .portfolio-container-item {
   margin-left: 0;
@@ -15,7 +19,7 @@
 .flex {
   display: flex;
   height: 60px;
-  @media screen and ( min-width: 1200px) {
+  @media screen and (min-width: 1200px) {
     height: 80px;
   }
 }
@@ -23,6 +27,10 @@
 .portfolio-list {
   display: flex;
   list-style: none;
+  @media screen and ( max-width:768px ){
+    flex-wrap: wrap;
+    justify-content: flex-start;
+  }
 }
 @media screen and (min-width: 1200px) {
   .backgraund {
@@ -37,17 +45,17 @@
   }
 }
 @media screen and (max-width: 480px) {
-    .backgraund {
-      padding-top: 200px;
-      height: 400px;
-      background: radial-gradient(
-          circle at center,
-          rgba(47, 48, 58, 0.4),
-          rgba(47, 48, 58, 0.4)
-        ),
-        url(../images/Img-bg.png);
-    }
+  .backgraund {
+    padding-top: 200px;
+    height: 400px;
+    background: radial-gradient(
+        circle at center,
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url(../images/Img-bg.png);
   }
+}
 
 .backgraund-down {
   background-color: #2f303a;
