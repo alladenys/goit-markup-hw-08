@@ -932,17 +932,29 @@ nav.flex a.active {
 
 @media screen and (min-width: 1200px) {
   .backgraund {
+    margin-top: 80px;
     padding-top: 200px;
     height: 600px;
-    background: radial-gradient(circle at center, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/Img-bg.png);
+    background: radial-gradient(circle at center, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/bg/pc-bg-img.jpg);
   }
 }
 
 @media screen and (max-width: 480px) {
   .backgraund {
-    padding-top: 200px;
+    margin-top: 60px;
+    padding-top: 118px;
     height: 400px;
-    background: radial-gradient(circle at center, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/Img-bg.png);
+    background: radial-gradient(circle at center, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/bg/tel-bg-img.jpg);
+  }
+}
+
+@media screen and (min-width: 480px) and (max-width: 1200px) {
+  .backgraund {
+    margin-top: 80px;
+    padding-top: 118px;
+    height: 400px;
+    background: radial-gradient(circle at center, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/bg/tab-bg-img.jpg);
+    background: cover;
   }
 }
 
@@ -1661,6 +1673,7 @@ p.main-text {
     width: calc((100% - 34px) / 2);
     max-width: 480px;
     display: inline-block;
+    margin-bottom: 30px;
   }
   .client-logo-list .client-logo:nth-child(2n) {
     margin-right: 0;
@@ -1672,6 +1685,7 @@ p.main-text {
     width: calc((100% - 34px) / 2);
     max-width: 480px;
     display: inline-block;
+    margin-bottom: 30px;
   }
   .client-logo-list .client-logo:nth-child(2n) {
     margin-right: 0;
