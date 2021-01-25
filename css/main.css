@@ -1845,10 +1845,25 @@ p.main-text {
 
 @media screen and (max-width: 480px) {
   .inline-information {
+    margin: 0;
+    padding: 0;
+    list-style: none;
     display: inline;
     width: 100%;
     min-width: 480px;
     justify-content: center;
+    height: 603px;
+  }
+  .logo-position {
+    margin-right: 0;
+    margin-bottom: 0;
+  }
+  .contacts-list {
+    margin-bottom: 8px;
+  }
+  .join {
+    margin-top: 0;
+    margin-bottom: 20px;
   }
   .inline-information:last-child {
     margin-bottom: 60px;
@@ -1879,6 +1894,10 @@ p.main-text {
     margin-left: auto;
     padding-left: 0;
     padding-right: 0;
+  }
+  .join-social ul.social-icons {
+    margin-top: 0;
+    margin-bottom: 0;
   }
   .social-icons {
     width: 218px;
@@ -1948,11 +1967,12 @@ p.main-text {
 
 @media screen and (min-width: 768px) and (max-width: 1200px) {
   .inline-information {
+    list-style: none;
+    width: 100%;
     max-width: 768px;
-    padding-left: 0;
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: 60px;
+    margin: 0;
+    padding: 0;
+    height: 463px;
   }
   .inline-information-item {
     list-style: none;
@@ -1964,7 +1984,6 @@ p.main-text {
     width: calc(100% / 2);
     max-width: 380px;
     display: inline-block;
-    height: 247px;
     margin-right: auto;
     margin-left: auto;
   }
@@ -1986,10 +2005,20 @@ p.main-text {
     justify-content: center;
     text-align: center;
   }
+  .contacts-list {
+    margin-bottom: 8px;
+  }
   .list-item {
     width: 100%;
     margin-left: auto;
     margin-right: auto;
+  }
+  div.logo-footer a.logo-position {
+    margin-bottom: 0;
+    margin-right: 0;
+  }
+  .join {
+    margin-top: 0;
   }
 }
 
@@ -2086,6 +2115,7 @@ figure p {
     padding-right: 0;
     margin-left: 0;
     margin-right: 0;
+    margin-top: 60px;
   }
 }
 
@@ -2097,6 +2127,7 @@ figure p {
     padding-right: 0;
     margin-left: auto;
     margin-right: auto;
+    margin-top: 60px;
   }
 }
 
@@ -2106,7 +2137,7 @@ figure p {
     margin-left: auto;
     margin-right: auto;
     margin-top: 20px;
-    margin-bottom: 70px;
+    margin-bottom: 60px;
   }
 }
 
