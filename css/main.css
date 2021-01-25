@@ -302,18 +302,22 @@ img {
   fill: #212121;
 }
 
-@media screen and (max-width: 481px) {
-  .svg-form3 .svg-form1 {
+@media screen and (max-width: 480px) {
+  .svg-form1 {
     position: absolute;
-    top: 125px;
+    top: 129px;
   }
-  .svg-form3 .svg-form2 {
+  .svg-form2 {
     position: absolute;
-    top: 193px;
+    top: 197px;
   }
-  .svg-form3 .svg-form3 {
+  .svg-form3 {
     position: absolute;
-    top: 259px;
+    top: 263px;
+  }
+  .recole-form-feald {
+    width: 100%;
+    max-width: 370px;
   }
 }
 
@@ -389,8 +393,6 @@ input.recole-form-feald:focus + svg.svg-form3 {
 
 .fake-checkbox {
   display: flex;
-  margin-left: 13px;
-  margin-top: 15px;
   height: 24px;
   margin-bottom: 0;
   padding: 0;
@@ -417,6 +419,14 @@ label.fake {
   color: #2196F3;
 }
 
+@media screen and (max-width: 1200px) {
+  .agreement-conditions {
+    font-size: 12px;
+    line-height: 1.17;
+    padding-top: 8px;
+  }
+}
+
 .recole-formlabel {
   margin-top: 12px;
   margin-bottom: 4px;
@@ -437,15 +447,29 @@ label.fake {
 
 .recole-form span {
   margin-left: 9px;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+}
+
+@media screen and (max-width: 1200px) {
+  .recole-form span {
+    font-size: 12px;
+    line-height: 1.17;
+    padding-top: 8px;
+  }
+  .recole-form span .fake-checkbox {
+    margin-left: 0;
+  }
 }
 
 .btn-send-recol {
   height: 50px;
   width: 200px;
   margin-top: 30px;
-  margin-right: 124px;
+  margin-right: calc((100% - 200px) / 2);
   margin-bottom: 40px;
-  margin-left: 124px;
+  margin-left: calc((100% - 200px) / 2);
   background: #188ce8;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border: 1 solid #2196F3;
