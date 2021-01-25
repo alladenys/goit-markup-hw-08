@@ -927,6 +927,8 @@ nav.flex a.active {
   .portfolio-list {
     flex-wrap: wrap;
     justify-content: flex-start;
+    width: 100%;
+    max-width: 480px;
   }
 }
 
@@ -1140,6 +1142,15 @@ p.main-text {
   justify-content: center;
 }
 
+.flex-wrap-item {
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
+}
+
+.flex-wrap-item img {
+  width: 100%;
+}
+
 @media screen and (min-width: 1200px) {
   .flex-wrap {
     flex-wrap: wrap;
@@ -1220,7 +1231,7 @@ p.main-text {
   position: absolute;
   left: 0;
   width: 100%;
-  height: 294px;
+  height: 306px;
   color: #FFFFFF;
   background-color: rgba(33, 150, 243, 0.9);
   opacity: 0;
@@ -1340,6 +1351,11 @@ p.main-text {
   margin-bottom: 0px;
   width: 370px;
   height: 294px;
+}
+
+.list-position-team li.list-position-team {
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
 }
 
 .list-item-position:not(:last-child) {
