@@ -2,13 +2,16 @@
   display: inline-block;
   position: relative;
   position: fixed;
-  height: 80px;
+  height: 60px;
   top: 0;
   left: 0;
   right: 0;
   background-color: $whait-cl;
   z-index: 3;
   border: 1px solid #ececec;
+  @media screen and (min-width: 768px){
+    height: 80px;
+  }
 }
 .list {
   list-style: none;
@@ -70,7 +73,7 @@ link:hover .icon-header-item2 {
   width: 100%;
   height: 4px;
   background-color: $accent-cl;
-  margin-top: 22px;
+  margin-top: 27px;
 }
 
 nav.flex a.active {
@@ -113,6 +116,10 @@ nav.flex a.active {
     padding-left: 0;
     margin-bottom: 0;
     align-items: center;
+    font-size: 14px;
+    line-height: 1.18;
+    letter-spacing: 0.02em;
+    color: $black-cl
   }
   .right-list {
     position: absolute;
@@ -132,7 +139,7 @@ nav.flex a.active {
   .left-list {
     position: absolute;
     top: 32px;
-    left: 222px;
+    left: 230px;
     display: flex;
     width: 343px;
     margin-top: 0;
@@ -141,14 +148,18 @@ nav.flex a.active {
     padding-left: 0;
     margin-bottom: 0;
     align-items: center;
+    font-size: 14px;
+    line-height: 1.18;
+    letter-spacing: 0.02em;
+    color: $black-cl
+
   }
   .right-list {
     display: flex;
     flex-direction: column;
     position: absolute;
-    position: absolute;
     top: 21px;
-    left: 613px;
+    left: 595px;
     display: flex;
     font-weight: 500;
     size: 12px;
@@ -162,6 +173,7 @@ nav.flex a.active {
   svg.icon-header-item1,
   svg.icon-header-item2 {
     display: flex;
+    flex-direction: column;
   }
   .icon-header-item1 {
     margin-top: 2px;
@@ -239,6 +251,7 @@ nav.flex a.active {
   .icon-header {
     padding: 0;
     border: 0;
+    width: 100%;
   }
   .icon-header-item1 {
     margin-top: 2px;

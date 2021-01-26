@@ -7,6 +7,9 @@
   padding: 0;
   border: none;
   background-color: transparent;
+  @media screen and (max-width: 768px) {
+    display: inline-flex;
+  }
   @media screen and (min-width: 768px) {
     display: none;
   }
@@ -26,7 +29,6 @@
 }
 .menu-container {
   position: absolute;
-  display: flex;
   background-color: #fff;
   padding: 20px;
   text-align: center;
@@ -51,17 +53,17 @@
     display: block;
     }
   }
-  @media screen and ( min-width:768px ){
-    display: flex;
-    justify-content: center;
-    flex-grow: 1;
-  }
   .media{
     width: 100%;
     padding: 0;
     margin-top: 0.08%;
     @media screen and ( min-width:768px ){
       display: none;
+    }
+    @media screen and ( max-width:768px ){
+      display: flex;
+      justify-content: center;
+      flex-grow: 1;
     }
   }
   .media li{
@@ -99,14 +101,6 @@
     width: 100%; 
     font-size: 40px;
   }
-  @media screen and (min-width: 768px) and (max-width: 1200px) {
-    
-  }
-  
-  @media screen and (min-width: 1200px) {
-  
-  }
-  
 }
 .contacts {
   margin-top: 202px;

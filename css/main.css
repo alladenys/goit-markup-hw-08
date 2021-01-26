@@ -46,6 +46,7 @@ img {
 @media screen and (min-width: 768px) and (max-width: 1200px) {
   .container {
     min-width: 768px;
+    max-width: 900px;
   }
 }
 
@@ -57,7 +58,7 @@ img {
 
 .logo {
   display: inline-block;
-  margin-top: 26px;
+  margin-top: 23px;
   margin-bottom: 23px;
   margin-right: 93px;
   margin-left: 0px;
@@ -71,6 +72,13 @@ img {
 @media screen and (min-width: 768px) and (max-width: 1200px) {
   .logo {
     margin-right: 88px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .logo {
+    margin-top: 16px;
+    margin-bottom: 16px;
   }
 }
 
@@ -107,7 +115,7 @@ img {
   text-decoration: none;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1200px) {
   .ligo1,
   .logo2,
   .logo3 {
@@ -116,12 +124,16 @@ img {
   }
 }
 
-@media screen and (min-width: 768px) {
-  .ligo1,
+@media screen and (min-width: 1200px) {
+  .logo1,
   .logo2,
   .logo3 {
     font-size: 26px;
     line-height: 1.38;
+  }
+  .logo {
+    margin-top: 23px;
+    margin-bottom: 23px;
   }
 }
 
@@ -498,6 +510,12 @@ label.fake {
   background-color: transparent;
 }
 
+@media screen and (max-width: 768px) {
+  .menu-button {
+    display: inline-flex;
+  }
+}
+
 @media screen and (min-width: 768px) {
   .menu-button {
     display: none;
@@ -522,7 +540,6 @@ label.fake {
 
 .menu-container {
   position: absolute;
-  display: flex;
   background-color: #fff;
   padding: 20px;
   text-align: center;
@@ -552,14 +569,6 @@ label.fake {
   }
 }
 
-@media screen and (min-width: 768px) {
-  .menu-container {
-    display: flex;
-    justify-content: center;
-    flex-grow: 1;
-  }
-}
-
 .menu-container .media {
   width: 100%;
   padding: 0;
@@ -569,6 +578,14 @@ label.fake {
 @media screen and (min-width: 768px) {
   .menu-container .media {
     display: none;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .menu-container .media {
+    display: flex;
+    justify-content: center;
+    flex-grow: 1;
   }
 }
 
@@ -630,13 +647,19 @@ label.fake {
   display: inline-block;
   position: relative;
   position: fixed;
-  height: 80px;
+  height: 60px;
   top: 0;
   left: 0;
   right: 0;
   background-color: #FFFFFF;
   z-index: 3;
   border: 1px solid #ececec;
+}
+
+@media screen and (min-width: 768px) {
+  .header-box {
+    height: 80px;
+  }
 }
 
 .list {
@@ -712,7 +735,7 @@ link:hover .icon-header-item2 {
   width: 100%;
   height: 4px;
   background-color: #2196F3;
-  margin-top: 22px;
+  margin-top: 27px;
 }
 
 nav.flex a.active {
@@ -756,6 +779,10 @@ nav.flex a.active {
     padding-left: 0;
     margin-bottom: 0;
     align-items: center;
+    font-size: 14px;
+    line-height: 1.18;
+    letter-spacing: 0.02em;
+    color: #212121;
   }
   .right-list {
     position: absolute;
@@ -776,7 +803,7 @@ nav.flex a.active {
   .left-list {
     position: absolute;
     top: 32px;
-    left: 222px;
+    left: 230px;
     display: flex;
     width: 343px;
     margin-top: 0;
@@ -785,14 +812,17 @@ nav.flex a.active {
     padding-left: 0;
     margin-bottom: 0;
     align-items: center;
+    font-size: 14px;
+    line-height: 1.18;
+    letter-spacing: 0.02em;
+    color: #212121;
   }
   .right-list {
     display: flex;
     flex-direction: column;
     position: absolute;
-    position: absolute;
     top: 21px;
-    left: 613px;
+    left: 595px;
     display: flex;
     font-weight: 500;
     size: 12px;
@@ -806,6 +836,7 @@ nav.flex a.active {
   svg.icon-header-item1,
   svg.icon-header-item2 {
     display: flex;
+    flex-direction: column;
   }
   .icon-header-item1 {
     margin-top: 2px;
@@ -885,6 +916,7 @@ nav.flex a.active {
   .icon-header {
     padding: 0;
     border: 0;
+    width: 100%;
   }
   .icon-header-item1 {
     margin-top: 2px;
@@ -936,9 +968,25 @@ nav.flex a.active {
   height: 60px;
 }
 
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 768px) and (max-width: 1200px) {
+  .flex {
+    width: 100%;
+    max-width: 768px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+@media screen and (min-width: 768px) {
   .flex {
     height: 80px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .flex {
+    width: 100%;
+    max-width: 1200px;
   }
 }
 
@@ -976,7 +1024,7 @@ nav.flex a.active {
 
 @media screen and (min-width: 480px) and (max-width: 1200px) {
   .backgraund {
-    margin-top: 80px;
+    margin-top: 60px;
     padding-top: 118px;
     height: 400px;
     background: radial-gradient(circle at center, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/bg/tab-bg-img.jpg);
@@ -1066,6 +1114,8 @@ nav.flex a.active {
   .list-position li {
     margin-bottom: 30px;
     margin-top: 0;
+    width: calc((100% - 34px) / 2);
+    min-width: 352px;
   }
 }
 
