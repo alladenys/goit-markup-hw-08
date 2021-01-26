@@ -1295,7 +1295,12 @@ p.main-text {
   position: relative;
   overflow: hidden;
 }
-
+@media screen and (max-width: 768px) {
+  .portfolio-container-item{
+    width:100%;
+    max-width: 450px;
+  }
+}
 .portfolio-container-item li img {
   width: 100%;  
   display: block;
