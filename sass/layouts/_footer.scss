@@ -403,7 +403,10 @@ figure {
   padding-right: 18px;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   fill: $whait-cl;
-  cursor: pointer;
+  &:focus{
+    cursor: pointer;
+  }
+  
   @media screen and (max-width: 479px) {
     width: 200px;
     margin-top: 20px;
