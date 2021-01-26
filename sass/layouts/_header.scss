@@ -28,7 +28,7 @@
 }
 .link-item {
   height: 16px;
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 767px) {
     height: 48px;
     margin-top: 32px;
   }
@@ -80,7 +80,7 @@ nav.flex a.active {
   position: relative;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
   .left-list {
     width: 100%;
     margin: 0;
@@ -135,7 +135,7 @@ nav.flex a.active {
     color: $black-cl;
   }
 }
-@media screen and (min-width: 768px) and (max-width: 1200px) {
+@media screen and (min-width: 768px) and (max-width: 1199px) {
   .left-list {
     position: absolute;
     top: 32px;
@@ -196,7 +196,7 @@ nav.flex a.active {
     align-items: center;
   }
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
   .link-item-right {
     height: 16px;
     padding: 0;

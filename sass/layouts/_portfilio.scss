@@ -7,7 +7,7 @@
   margin: 0;
   margin-bottom: 50px;
   justify-content: center;
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 767px) {
     padding-top: 126px;
     margin-bottom: 46px;
   }
@@ -19,7 +19,7 @@
 .flex {
   display: flex;
   height: 60px;
-  @media screen and (min-width: 768px) and (max-width: 1200px){
+  @media screen and (min-width: 768px) and (max-width: 1199px){
     width: 100%;
     max-width: 768px;
     margin-left: auto;
@@ -37,7 +37,7 @@
 .portfolio-list {
   display: flex;
   list-style: none;
-  @media screen and ( max-width:768px ){
+  @media screen and ( max-width:767px ){
     flex-wrap: wrap;
     justify-content: flex-start;
     width: 100%;
@@ -57,7 +57,7 @@
       url(../images/bg/pc-bg-img.jpg);
   }
 }
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 479px) {
   .backgraund {
     margin-top: 60px;
     padding-top: 118px;
@@ -70,7 +70,7 @@
       url(../images/bg/tel-bg-img.jpg);
   }
 }
-@media screen and (min-width: 480px) and (max-width: 1200px){
+@media screen and (min-width: 480px) and (max-width: 1199px){
   .backgraund {
     margin-top: 60px;
     padding-top: 118px;

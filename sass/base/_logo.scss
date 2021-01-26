@@ -9,10 +9,10 @@
   text-decoration: none;
   text-align: center;
   z-index: 4;
-  @media screen and ( min-width:768px ) and ( max-width:1200px ){
+  @media screen and ( min-width:768px ) and ( max-width:1199px ){
     margin-right: 88px;
   }
-  @media screen and ( max-width:768px ){
+  @media screen and ( max-width:767px ){
     margin-top: 16px;
   margin-bottom: 16px;
   }
@@ -48,7 +48,7 @@
   color: $whait-cl;
   text-decoration: none;
 }
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 1199px) {
   .ligo1,
   .logo2,
   .logo3 {

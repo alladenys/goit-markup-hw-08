@@ -59,7 +59,7 @@
   left: 56px;
   fill: $black-cl;
 }
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 479px) {
   .svg-form1 {
     position: absolute;
     top: 129px;
@@ -163,7 +163,7 @@ label.fake {
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: $accent-cl;
-  @media screen and (max-width: 1200px) {
+  @media screen and (max-width: 1199px) {
     font-size: 12px;
     line-height: 1.17;
     padding-top: 8px;
@@ -189,7 +189,7 @@ label.fake {
     font-size: 14px;
     line-height: 1.71;
     letter-spacing: 0.03em;
-    @media screen and ( max-width:1200px ){
+    @media screen and ( max-width: 1199px ){
       font-size: 12px;
       line-height: 1.17;
       padding-top: 8px;

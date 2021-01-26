@@ -18,7 +18,7 @@
   background-color: #f5f4fa;
   height: 38px;
   border: none;
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 767px) {
     margin-bottom: 10px;
   }
 }
@@ -54,7 +54,7 @@
     margin-bottom: 94px;
   }
 }
-@media screen and (min-width: 480px) and ( max-width: 768px ){
+@media screen and (min-width: 480px) and ( max-width: 767px ){
     .flex-wrap {
         width: 100%;
         max-width: 480px;
@@ -64,7 +64,7 @@
         margin-right: auto;
     }
 }
-@media screen and (min-width: 768px) and ( max-width: 1200px ){
+@media screen and (min-width: 768px) and ( max-width: 1199px ){
     .flex-wrap {
         width: 100%;
         max-width: 768px;
@@ -142,7 +142,7 @@
   top: 0;
 }
 .hidden-section {
-  @media screen and(max-width: 1200px) {
+  @media screen and(max-width: 1199px) {
     display: none;
   }
 }

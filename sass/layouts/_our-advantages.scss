@@ -9,12 +9,12 @@
     margin-left: 0;
     margin-right: 0;
     margin-top: 0;
-    @media screen and (min-width: 480px) and (max-width: 768px){
+    @media screen and (min-width: 480px) and (max-width: 767px){
         max-width: 450px;
         margin-left: auto;
         margin-right: auto;
     }
-    @media screen and (min-width: 768px) and (max-width: 1200px){
+    @media screen and (min-width: 768px) and (max-width: 1199px){
         display: inline-block;
         margin-right: 30px;
         width: calc((100% - 34px)/2);
@@ -25,7 +25,7 @@
         margin-right: 30px;
     }
 }
-@media screen and (min-width: 768px) and (max-width: 1200px){
+@media screen and (min-width: 768px) and (max-width: 1199px){
     .list-position-item{
          margin-right: 30px;
          margin-left: 0;
@@ -39,18 +39,18 @@
     }
 }
 .list-position-item:nth-child(even){
-    @media screen and (min-width: 768px) and (max-width: 1200px){
+    @media screen and (min-width: 768px) and (max-width: 1199px){
         margin-right: 0;
     }
 }
 
 .list-position li{
     justify-content:center;
-    @media screen and (max-width: 768px){
+    @media screen and (max-width: 767px){
         width: 100%;
         margin-bottom: 30px;
     }
-    @media screen and (min-width: 768px) and (max-width: 1200px){
+    @media screen and (min-width: 768px) and (max-width: 1199px){
         margin-bottom: 30px;
         margin-top: 0;
         width: calc((100% - 34px) / 2);
@@ -62,7 +62,7 @@
 }
 p.main-text{
     height: 50px;
-    @media screen and (min-width: 768px) and (max-width: 1200px){
+    @media screen and (min-width: 768px) and (max-width: 1199px){
         height: 75px;
         p.main-text:nth-child(2n+1){
             height: 50px;

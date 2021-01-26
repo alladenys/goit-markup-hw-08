@@ -37,13 +37,13 @@ img {
   justify-content: center;
 }
 
-@media screen and (min-width: 480px) and (max-width: 768px) {
+@media screen and (min-width: 480px) and (max-width: 767px) {
   .container {
     min-width: 480px;
   }
 }
 
-@media screen and (min-width: 768px) and (max-width: 1200px) {
+@media screen and (min-width: 768px) and (max-width: 1199px) {
   .container {
     min-width: 768px;
     max-width: 900px;
@@ -69,13 +69,13 @@ img {
   z-index: 4;
 }
 
-@media screen and (min-width: 768px) and (max-width: 1200px) {
+@media screen and (min-width: 768px) and (max-width: 1199px) {
   .logo {
     margin-right: 88px;
   }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
   .logo {
     margin-top: 16px;
     margin-bottom: 16px;
@@ -115,7 +115,7 @@ img {
   text-decoration: none;
 }
 
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 1199px) {
   .ligo1,
   .logo2,
   .logo3 {
@@ -197,7 +197,7 @@ img {
   padding-left: 41px;
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 479px) {
   .modal {
     max-width: 450px;
   }
@@ -314,7 +314,7 @@ img {
   fill: #212121;
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 479px) {
   .svg-form1 {
     position: absolute;
     top: 129px;
@@ -431,7 +431,7 @@ label.fake {
   color: #2196F3;
 }
 
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 1199px) {
   .agreement-conditions {
     font-size: 12px;
     line-height: 1.17;
@@ -464,7 +464,7 @@ label.fake {
   letter-spacing: 0.03em;
 }
 
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 1199px) {
   .recole-form span {
     font-size: 12px;
     line-height: 1.17;
@@ -510,7 +510,7 @@ label.fake {
   background-color: transparent;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
   .menu-button {
     display: inline-flex;
   }
@@ -549,7 +549,7 @@ label.fake {
   color: #212121;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
   .menu-container {
     display: none;
     position: absolute;
@@ -581,7 +581,7 @@ label.fake {
   }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
   .menu-container .media {
     display: flex;
     justify-content: center;
@@ -623,7 +623,7 @@ label.fake {
   z-index: 4;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
   .navigation {
     height: 208px;
     width: 100%;
@@ -683,7 +683,7 @@ label.fake {
   letter-spacing: 0.02em;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
   .link-item {
     height: 48px;
     margin-top: 32px;
@@ -742,7 +742,7 @@ nav.flex a.active {
   position: relative;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
   .left-list {
     width: 100%;
     margin: 0;
@@ -799,7 +799,7 @@ nav.flex a.active {
   }
 }
 
-@media screen and (min-width: 768px) and (max-width: 1200px) {
+@media screen and (min-width: 768px) and (max-width: 1199px) {
   .left-list {
     position: absolute;
     top: 32px;
@@ -860,7 +860,7 @@ nav.flex a.active {
   }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
   .link-item-right {
     height: 16px;
     padding: 0;
@@ -952,7 +952,7 @@ nav.flex a.active {
   justify-content: center;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
   .portfolio-container {
     padding-top: 126px;
     margin-bottom: 46px;
@@ -968,7 +968,7 @@ nav.flex a.active {
   height: 60px;
 }
 
-@media screen and (min-width: 768px) and (max-width: 1200px) {
+@media screen and (min-width: 768px) and (max-width: 1199px) {
   .flex {
     width: 100%;
     max-width: 768px;
@@ -995,7 +995,7 @@ nav.flex a.active {
   list-style: none;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
   .portfolio-list {
     flex-wrap: wrap;
     justify-content: flex-start;
@@ -1013,7 +1013,7 @@ nav.flex a.active {
   }
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 479px) {
   .backgraund {
     margin-top: 60px;
     padding-top: 118px;
@@ -1022,7 +1022,7 @@ nav.flex a.active {
   }
 }
 
-@media screen and (min-width: 480px) and (max-width: 1200px) {
+@media screen and (min-width: 480px) and (max-width: 1199px) {
   .backgraund {
     margin-top: 60px;
     padding-top: 118px;
@@ -1054,7 +1054,7 @@ nav.flex a.active {
   margin-top: 0;
 }
 
-@media screen and (min-width: 480px) and (max-width: 768px) {
+@media screen and (min-width: 480px) and (max-width: 767px) {
   .list-position-item {
     max-width: 450px;
     margin-left: auto;
@@ -1062,7 +1062,7 @@ nav.flex a.active {
   }
 }
 
-@media screen and (min-width: 768px) and (max-width: 1200px) {
+@media screen and (min-width: 768px) and (max-width: 1199px) {
   .list-position-item {
     display: inline-block;
     margin-right: 30px;
@@ -1078,7 +1078,7 @@ nav.flex a.active {
   }
 }
 
-@media screen and (min-width: 768px) and (max-width: 1200px) {
+@media screen and (min-width: 768px) and (max-width: 1199px) {
   .list-position-item {
     margin-right: 30px;
     margin-left: 0;
@@ -1093,7 +1093,7 @@ nav.flex a.active {
   }
 }
 
-@media screen and (min-width: 768px) and (max-width: 1200px) {
+@media screen and (min-width: 768px) and (max-width: 1199px) {
   .list-position-item:nth-child(even) {
     margin-right: 0;
   }
@@ -1103,14 +1103,14 @@ nav.flex a.active {
   justify-content: center;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
   .list-position li {
     width: 100%;
     margin-bottom: 30px;
   }
 }
 
-@media screen and (min-width: 768px) and (max-width: 1200px) {
+@media screen and (min-width: 768px) and (max-width: 1199px) {
   .list-position li {
     margin-bottom: 30px;
     margin-top: 0;
@@ -1129,7 +1129,7 @@ p.main-text {
   height: 50px;
 }
 
-@media screen and (min-width: 768px) and (max-width: 1200px) {
+@media screen and (min-width: 768px) and (max-width: 1199px) {
   p.main-text {
     height: 75px;
   }
@@ -1193,7 +1193,7 @@ p.main-text {
   border: none;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
   .btn-portfolio {
     margin-bottom: 10px;
   }
@@ -1233,7 +1233,7 @@ p.main-text {
   }
 }
 
-@media screen and (min-width: 480px) and (max-width: 768px) {
+@media screen and (min-width: 480px) and (max-width: 767px) {
   .flex-wrap {
     width: 100%;
     max-width: 480px;
@@ -1244,7 +1244,7 @@ p.main-text {
   }
 }
 
-@media screen and (min-width: 768px) and (max-width: 1200px) {
+@media screen and (min-width: 768px) and (max-width: 1199px) {
   .flex-wrap {
     width: 100%;
     max-width: 768px;
@@ -1328,7 +1328,7 @@ p.main-text {
   top: 0;
 }
 
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 1199px) {
   .hidden-section {
     display: none;
   }
@@ -1454,7 +1454,7 @@ p.main-text {
   width: 100%;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
   .job-description {
     margin-bottom: 0;
   }
@@ -1483,7 +1483,7 @@ p.main-text {
   }
 }
 
-@media screen and (min-width: 400px) and (max-width: 480px) {
+@media screen and (min-width: 400px) and (max-width: 479px) {
   .team-box {
     width: 100%;
     margin-left: auto;
@@ -1493,7 +1493,7 @@ p.main-text {
   }
 }
 
-@media screen and (min-width: 480px) and (max-width: 768px) {
+@media screen and (min-width: 480px) and (max-width: 767px) {
   .team-box {
     width: 100%;
     margin-left: auto;
@@ -1503,7 +1503,7 @@ p.main-text {
   }
 }
 
-@media screen and (min-width: 768px) and (max-width: 1200px) {
+@media screen and (min-width: 768px) and (max-width: 1199px) {
   .team-box {
     width: 100%;
     margin-left: auto;
@@ -1529,7 +1529,7 @@ p.main-text {
   margin-bottom: 30px;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
   .team-titel {
     padding-top: 60px;
   }
@@ -1559,7 +1559,7 @@ p.main-text {
   }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
   .list-position-team li.list-contacts-img {
     margin-left: auto;
     margin-right: auto;
@@ -1569,7 +1569,7 @@ p.main-text {
   }
 }
 
-@media screen and (min-width: 768px) and (max-width: 1200px) {
+@media screen and (min-width: 768px) and (max-width: 1199px) {
   .list-position-team {
     width: 100%;
     max-width: 768px;
@@ -1748,7 +1748,7 @@ p.main-text {
   margin-bottom: 60px;
 }
 
-@media screen and (min-width) {
+@media screen and (min-width: 1200px) {
   .client-title {
     margin-top: 94px;
     margin-bottom: 94px;
@@ -1768,7 +1768,7 @@ p.main-text {
   padding: 0;
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 479px) {
   .client-logo-list .client-logo {
     width: calc((100% - 34px) / 2);
     max-width: 480px;
@@ -1792,7 +1792,7 @@ p.main-text {
   }
 }
 
-@media screen and (min-width: 768px) and (max-width: 1200px) {
+@media screen and (min-width: 768px) and (max-width: 1199px) {
   .client-logo-list .client-logo {
     margin-right: 30px;
     margin-bottom: 30px;
@@ -1905,7 +1905,7 @@ p.main-text {
   color: rgba(255, 255, 255, 0.6);
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
   .contacts {
     justify-content: center;
   }
@@ -1916,7 +1916,7 @@ p.main-text {
   padding-top: 0px;
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 479px) {
   .contacts-box {
     max-height: 603px;
   }
@@ -1933,7 +1933,7 @@ p.main-text {
   letter-spacing: 3%;
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 479px) {
   .inline-information {
     margin: 0;
     padding: 0;
@@ -2055,7 +2055,7 @@ p.main-text {
   }
 }
 
-@media screen and (min-width: 768px) and (max-width: 1200px) {
+@media screen and (min-width: 768px) and (max-width: 1199px) {
   .inline-information {
     list-style: none;
     width: 100%;
@@ -2197,7 +2197,7 @@ figure p {
   margin-left: 93px;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
   .subscribe-newsletter {
     width: 100%;
     max-width: 768px;
@@ -2209,7 +2209,7 @@ figure p {
   }
 }
 
-@media screen and (min-width: 768px) and (max-width: 1200px) {
+@media screen and (min-width: 768px) and (max-width: 1199px) {
   .subscribe-newsletter {
     width: 100%;
     max-width: 768px;
@@ -2221,7 +2221,7 @@ figure p {
   }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
   .subscribe-form {
     max-width: 768px;
     margin-left: auto;
@@ -2231,7 +2231,7 @@ figure p {
   }
 }
 
-@media screen and (min-width: 768px) and (max-width: 1200px) {
+@media screen and (min-width: 768px) and (max-width: 1199px) {
   .subscribe-form {
     min-width: 768px;
     margin-left: auto;
@@ -2266,7 +2266,7 @@ figure p {
   padding-right: 16px;
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 479px) {
   .form-feald {
     width: 100%;
     max-width: 450px;
@@ -2276,7 +2276,7 @@ figure p {
   }
 }
 
-@media screen and (min-width: 480px) and (max-width: 768px) {
+@media screen and (min-width: 480px) and (max-width: 767px) {
   .form-feald {
     display: block;
     width: 450px;
@@ -2287,7 +2287,7 @@ figure p {
   }
 }
 
-@media screen and (min-width: 768px) and (max-width: 1200px) {
+@media screen and (min-width: 768px) and (max-width: 1199px) {
   .form-feald {
     width: 450px;
     max-width: 768px;
@@ -2328,7 +2328,7 @@ figure p {
   cursor: pointer;
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 479px) {
   .subscribe-btn {
     width: 200px;
     margin-top: 20px;
@@ -2337,7 +2337,7 @@ figure p {
   }
 }
 
-@media screen and (min-width: 480px) and (max-width: 768px) {
+@media screen and (min-width: 480px) and (max-width: 767px) {
   .subscribe-btn {
     width: 200px;
     padding-left: 29px;
@@ -2348,7 +2348,7 @@ figure p {
   }
 }
 
-@media screen and (min-width: 768px) and (max-width: 1200px) {
+@media screen and (min-width: 768px) and (max-width: 1199px) {
   .subscribe-btn {
     width: 200px;
     padding-left: 29px;
@@ -2369,7 +2369,7 @@ figure p {
   margin-left: 10px;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
   .svg-plain {
     margin-left: 10px;
     margin-right: 28px;

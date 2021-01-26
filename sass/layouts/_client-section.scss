@@ -55,7 +55,7 @@
 .client-title {
   margin-top: 60px;
   margin-bottom: 60px;
-  @media screen and (min-width) {
+  @media screen and (min-width:1200px) {
     margin-top: 94px;
     margin-bottom: 94px;
   }
@@ -71,7 +71,7 @@
   margin-right: 0;
   margin-left: 0;
   padding: 0;
-  @media screen and (max-width: 480px) {
+  @media screen and (max-width: 479px) {
     .client-logo {
       width: calc((100% - 34px) / 2);
       max-width: 480px;
@@ -93,7 +93,7 @@
       margin-right: 0;
     }
   }
-  @media screen and (min-width: 768px) and (max-width: 1200px) {
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
     .client-logo {
       margin-right: 30px;
       margin-bottom: 30px;
