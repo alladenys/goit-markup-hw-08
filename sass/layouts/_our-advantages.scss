@@ -1,6 +1,23 @@
 .list-position {
     padding-left: 0;
     margin-bottom: 0;
+    @media screen and (max-width: 479px){
+        width: 100%;
+        max-width: 479px;
+    }
+    @media screen and (min-width: 480px) and (max-width: 767px){
+        width: 100%;
+        max-width: 478px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    @media screen and (min-width: 768px) and (max-width: 1199px){
+        width: 100%;
+        max-width: 768px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
     @media screen and (min-width: 1200px){
     display: inline-flex;
     }
@@ -18,6 +35,7 @@
         display: inline-block;
         margin-right: 30px;
         width: calc((100% - 34px)/2);
+        height: 251px;
     }
     @media screen and (min-width: 1200px){
         margin-top: 94px;
@@ -54,7 +72,7 @@
         margin-bottom: 30px;
         margin-top: 0;
         width: calc((100% - 34px) / 2);
-        min-width: 352px;
+        max-width: 369px;
     }
     @media screen and (min-width:1200px){
         padding: 0;

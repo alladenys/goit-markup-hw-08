@@ -1052,6 +1052,31 @@ nav.flex a.active {
   margin-bottom: 0;
 }
 
+@media screen and (max-width: 479px) {
+  .list-position {
+    width: 100%;
+    max-width: 479px;
+  }
+}
+
+@media screen and (min-width: 480px) and (max-width: 767px) {
+  .list-position {
+    width: 100%;
+    max-width: 478px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .list-position {
+    width: 100%;
+    max-width: 768px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
 @media screen and (min-width: 1200px) {
   .list-position {
     display: inline-flex;
@@ -1077,6 +1102,7 @@ nav.flex a.active {
     display: inline-block;
     margin-right: 30px;
     width: calc((100% - 34px)/2);
+    height: 251px;
   }
 }
 
@@ -1125,7 +1151,7 @@ nav.flex a.active {
     margin-bottom: 30px;
     margin-top: 0;
     width: calc((100% - 34px) / 2);
-    min-width: 352px;
+    max-width: 369px;
   }
 }
 
@@ -1412,6 +1438,7 @@ p.main-text {
   color: #757575;
   margin-left: 0px;
   padding-left: 0px;
+  height: 75px;
 }
 
 .text-box {
