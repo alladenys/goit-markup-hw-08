@@ -1297,10 +1297,14 @@ p.main-text {
 }
 
 .portfolio-container-item li img {
-  max-width: 100%;
+  width: 100%;  
   display: block;
 }
-
+@media screen and (max-width: 1200px) {
+.portfolio-container-item li img {
+  max-width: 450px;
+  }
+}
 .description {
   position: absolute;
   left: 0;
