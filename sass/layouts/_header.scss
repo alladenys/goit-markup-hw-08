@@ -160,7 +160,6 @@ nav.flex a.active {
     position: absolute;
     top: 21px;
     left: 595px;
-    display: flex;
     font-weight: 500;
     size: 12px;
     margin-top: 0;
@@ -172,7 +171,6 @@ nav.flex a.active {
   }
   svg.icon-header-item1,
   svg.icon-header-item2 {
-    display: flex;
     flex-direction: column;
   }
   .icon-header-item1 {
