@@ -21,6 +21,8 @@
 }
 @media screen and (max-width: 479px) {
   .contacts-box {
+    width: 100%;
+    max-width: 479px;
     max-height: 603px;
   }
 }
