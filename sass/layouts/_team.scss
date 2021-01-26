@@ -61,26 +61,28 @@
   // height: 648px;
   background-color: #f5f4fa;
   box-sizing: inherit;
+  padding-bottom: 60px;
   @media screen and (max-width: 400px) {
     width: 100%;
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 60px;
-    height: 2320px;
+    padding-bottom: 60px;
+    // height: 2320px;
   }
   @media screen and (min-width: 400px) and (max-width: 479px) {
     width: 100%;
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 60px;
-    height: 2520px;
+    // height: 2520px;
   }
   @media screen and (min-width: 480px) and (max-width: 767px) {
     width: 100%;
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 60px;
-    height: 2761px;
+    // height: 2761px;
   }
   @media screen and (min-width: 768px) and (max-width: 1199px) {
     width: 100%;

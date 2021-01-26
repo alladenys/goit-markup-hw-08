@@ -1540,6 +1540,7 @@ p.main-text {
 .team-box {
   background-color: #f5f4fa;
   box-sizing: inherit;
+  padding-bottom: 60px;
 }
 
 @media screen and (max-width: 400px) {
@@ -1548,7 +1549,7 @@ p.main-text {
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 60px;
-    height: 2320px;
+    padding-bottom: 60px;
   }
 }
 
@@ -1558,7 +1559,6 @@ p.main-text {
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 60px;
-    height: 2520px;
   }
 }
 
@@ -1568,7 +1568,6 @@ p.main-text {
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 60px;
-    height: 2761px;
   }
 }
 
