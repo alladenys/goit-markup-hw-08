@@ -1257,6 +1257,13 @@ p.main-text {
   border-radius: 0px 0px 4px 4px;
 }
 
+@media screen and (max-width: 479px) {
+  .flex-wrap-item {
+    width: 100%;
+    max-width: 479px;
+  }
+}
+
 .flex-wrap-item img {
   width: 100%;
 }
@@ -1339,6 +1346,7 @@ p.main-text {
 
 @media screen and (max-width: 479px) {
   .portfolio-container-item li img {
+    width: 100%;
     max-width: 450px;
   }
 }
@@ -1367,6 +1375,7 @@ p.main-text {
 
 @media screen and (max-width: 767px) {
   .description {
+    width: 100%;
     max-width: 450px;
   }
 }
