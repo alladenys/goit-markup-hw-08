@@ -46,13 +46,12 @@ img {
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .container {
     min-width: 768px;
-    max-width: 900px;
   }
 }
 
 @media screen and (min-width: 1200px) {
   .container {
-    max-width: 1200px;
+    min-width: 1200px;
   }
 }
 
@@ -532,6 +531,12 @@ label.fake {
 
 .menu-button.is-open .icon-close {
   display: block;
+  fill: #212121;
+}
+
+.menu-button .icon-menu {
+  display: block;
+  fill: #212121;
 }
 
 .menu-button.is-open .icon-menu {
@@ -1295,21 +1300,18 @@ p.main-text {
   position: relative;
   overflow: hidden;
 }
-@media screen and (max-width: 768px) {
-  .portfolio-container-item{
-    width:100%;
+
+.portfolio-container-item li img {
+  max-width: 100%;
+  display: block;
+}
+
+@media screen and (max-width: 479px) {
+  .portfolio-container-item li img {
     max-width: 450px;
   }
 }
-.portfolio-container-item li img {
-  width: 100%;  
-  display: block;
-}
-@media screen and (max-width: 1200px) {
-.portfolio-container-item li img {
-  max-width: 450px;
-  }
-}
+
 .description {
   position: absolute;
   left: 0;
@@ -1330,6 +1332,12 @@ p.main-text {
   -webkit-transition: all 0.25s;
   -o-transition: all 0.25s;
   transition: all 0.25s;
+}
+
+@media screen and (max-width: 767px) {
+  .description {
+    max-width: 450px;
+  }
 }
 
 .portfolio-container-item li:hover .description {
@@ -1706,6 +1714,14 @@ p.main-text {
   margin-right: 0;
 }
 
+@media screen and (max-width: 479px) {
+  .project-name {
+    width: 100%;
+    max-width: 450px;
+    margin-right: 0;
+  }
+}
+
 .project-type {
   font-size: 16px;
   line-height: 1.87;
@@ -1717,6 +1733,14 @@ p.main-text {
   margin-bottom: 20px;
   width: 370px;
   margin-right: 0px;
+}
+
+@media screen and (max-width: 479px) {
+  .project-type {
+    width: 100%;
+    max-width: 450px;
+    margin-right: 0;
+  }
 }
 
 .btn-portfolio:hover,

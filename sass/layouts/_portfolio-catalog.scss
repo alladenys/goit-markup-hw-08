@@ -114,6 +114,9 @@
   & img {
     max-width: 100%;
     display: block;
+    @media screen and ( max-width:479px ){
+      max-width: 450px;
+    }
   }
 }
 .description {
@@ -136,6 +139,9 @@
   -webkit-transition: all 0.25s;
   -o-transition: all 0.25s;
   transition: all 0.25s;
+  @media screen and ( max-width: 767px ){
+    max-width: 450px;
+  }
 }
 .portfolio-container-item li:hover .description {
   opacity: 1;

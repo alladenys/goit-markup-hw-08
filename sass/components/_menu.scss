@@ -23,6 +23,11 @@
 }
 .menu-button.is-open .icon-close {
   display: block;
+  fill: $black-cl;
+}
+.menu-button .icon-menu {
+  display: block;
+  fill: $black-cl;
 }
 .menu-button.is-open .icon-menu {
   display: none;
