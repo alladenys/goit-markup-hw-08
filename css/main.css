@@ -747,6 +747,12 @@ link:hover .icon-header-item2 {
   margin-top: 27px;
 }
 
+@media screen and (max-width: 479px) {
+  .link-item:hover.link-item::after {
+    max-width: 479px;
+  }
+}
+
 nav.flex a.active {
   position: relative;
 }
@@ -1339,6 +1345,13 @@ p.main-text {
   overflow: hidden;
 }
 
+@media screen and (max-width: 479px) {
+  .portfolio-container-item li {
+    width: 100%;
+    max-width: 450px;
+  }
+}
+
 .portfolio-container-item li img {
   max-width: 100%;
   display: block;
@@ -1398,8 +1411,6 @@ p.main-text {
   letter-spacing: 0.06em;
   text-align: center;
   color: #FFFFFF;
-  width: 360px;
-  height: 120px;
   margin-bottom: 30px;
   margin-top: 0;
   margin-left: auto;

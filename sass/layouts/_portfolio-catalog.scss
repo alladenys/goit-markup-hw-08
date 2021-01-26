@@ -115,6 +115,10 @@
   display: inline-block;
   position: relative;
   overflow: hidden;
+  @media screen and ( max-width:479px ){
+    width: 100%;
+    max-width: 450px;
+  }
   & img {
     max-width: 100%;
     display: block;
